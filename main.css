@@ -11,3 +11,8 @@
     --cambridge-blue: #9CC5A1; 
     --eminence: #533172; 
 }
+
+.container{
+    max-width: 1020px;
+    margin: 0 auto;
+}
