@@ -7,5 +7,19 @@
 }
 
 #hero{
+    /* background-image: url("/bilder/accessibility.jpg");
+    background-size: contain; */
     background-color: var(--cambridge-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .container{
+    padding: 80px;
+
+}
+
+h1{
+    text-align: center;
 }
