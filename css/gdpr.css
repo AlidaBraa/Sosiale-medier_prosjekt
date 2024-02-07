@@ -1,39 +1,72 @@
-:root{
-    --mountbatten-pink: #A28497; 
-    --caribbean-current: #216869; 
-    --jungle-green: #49A078; 
-    --cambridge-blue: #9CC5A1; 
-    --eminence: #533172; 
+:root {
+    --mountbatten-pink: #A28497;
+    --caribbean-current: #216869;
+    --jungle-green: #49A078;
+    --cambridge-blue: #9CC5A1;
+    --eminence: #533172;
 }
 
-#mini-header{
+#mini-header {
     padding: 20px;
 }
 
-#mini-header div{
-display: flex;
-justify-content: center;
-gap: 20px;
+#mini-header div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-h1{
+h1 {
     font-size: 40px;
 }
-h2{
+
+h2 {
     font-size: 30px;
 }
-p{
+
+p {
     font-size: 20px;
     line-height: 30px;
 }
+
 #safety {
-    height: 200px;
-    width: 250px;
+    height: 250px;
+    width: 300px;
 }
 
-#intro{
+
+#intro {
     display: flex;
-    gap: 20px;
-    
+    gap: 15px;
+
 }
 
+#effect {
+    padding: 10px;
+    background-color: var(--mountbatten-pink);
+   
+}
+#effects{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.number {
+    font-size: 50px;
+}
+#effect p{
+    font-size: 25px ;
+}
+.regulations {
+
+    width: 400px;
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+
+}
