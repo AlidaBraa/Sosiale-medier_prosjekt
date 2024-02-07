@@ -61,3 +61,7 @@ nav li a {
 nav li a:hover {
     text-decoration: underline;
 }
+
+.icon{
+    font-size: 40px;
+}
