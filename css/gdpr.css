@@ -7,9 +7,9 @@
 }
 
 #mini-header{
-    color: var(--jungle-green);
     padding: 20px;
 }
+
 #mini-header div{
 display: flex;
 justify-content: center;
@@ -19,3 +19,21 @@ gap: 20px;
 h1{
     font-size: 40px;
 }
+h2{
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+    line-height: 30px;
+}
+#safety {
+    height: 200px;
+    width: 250px;
+}
+
+#intro{
+    display: flex;
+    gap: 20px;
+    
+}
+
