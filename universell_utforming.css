@@ -23,3 +23,15 @@
 h1{
     text-align: center;
 }
+
+#intro .container{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#intro .container div{
+    padding: 20px;    
+}
