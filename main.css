@@ -16,3 +16,44 @@
     max-width: 1020px;
     margin: 0 auto;
 }
+
+/*nav bar*/
+nav {
+    background-color: var(--caribbean-current);
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.flexbox {
+    display: flex;
+}
+
+
+nav h1 {
+    font-size: 50px;
+    margin: 10px;
+    color: white;
+}
+
+#nav {
+    display: flex;
+}
+
+nav li{
+    list-style-type: none;
+    margin-left: 5px;
+    flex-direction: row;
+    margin: 10px 5px;
+    font-size: 20px;
+    justify-content: flex-end;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
