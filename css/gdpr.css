@@ -1,0 +1,79 @@
+:root {
+    --mountbatten-pink: #A28497;
+    --caribbean-current: #216869;
+    --jungle-green: #49A078;
+    --cambridge-blue: #9CC5A1;
+    --eminence: #533172;
+}
+
+#mini-header {
+    padding: 20px;
+}
+
+#mini-header div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#safety {
+    height: 250px;
+    width: 300px;
+}
+
+
+#intro {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+
+}
+
+#effect {
+    padding: 10px;
+    background-color: var(--mountbatten-pink);
+   
+}
+#effects{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.number {
+    font-size: 50px;
+    color: white;
+}
+#effect p, #effect h2{
+    font-size: 25px;
+    color: white;
+}
+#effect h2{
+    text-align: center;
+    padding: 20px;
+}
+.regulations {
+    width: 400px;
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+
+}

@@ -12,8 +12,12 @@
     --eminence: #533172; 
 }
 
+img{
+    width: 100%;
+}
+
 .container{
-    max-width: 1020px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -56,4 +60,8 @@ nav li a {
 
 nav li a:hover {
     text-decoration: underline;
+}
+
+.icon{
+    font-size: 40px;
 }
