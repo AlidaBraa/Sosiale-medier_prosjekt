@@ -32,6 +32,7 @@ p {
 #safety {
     height: 250px;
     width: 300px;
+    
 }
 
 
@@ -40,14 +41,13 @@ p {
     align-items: center;
     gap: 15px;
     padding: 10px;
-
 }
 
 #effect {
     padding: 10px;
-    background-color: var(--mountbatten-pink);
-   
+    background-color: #8c5f7bf0;
 }
+
 #effects{
     padding: 10px;
     display: flex;
@@ -74,6 +74,4 @@ p {
     display: flex;
     align-items: center;
     gap: 10px;
-
-
 }
