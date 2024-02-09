@@ -6,6 +6,27 @@
     --eminence: #533172; 
 }
 
+section .container {
+	display: grid;
+	gap: 20px;
+}
+
+/*Styler section 1 i cons*/
 #section1{
-    
+    margin-top: 50px;
+}
+
+#section1 .container{
+    grid-template-columns: 1fr 70%;
+}
+
+#section1 div:nth-of-type(2){
+    background-color: var(--cambridge-blue);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#section1 div:nth-of-type(1){
+    margin-top: auto;
+
 }
