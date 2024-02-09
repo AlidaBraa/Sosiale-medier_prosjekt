@@ -1,3 +1,4 @@
 #hero{
-    background-image: url('images/forside/forside_hero.jpg');
+    background-image: url('../images/forside/forside_hero.jpg');
+    min-height: 400px;
 }
