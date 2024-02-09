@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 p {
@@ -37,7 +37,9 @@ p {
 
 #intro {
     display: flex;
+    align-items: center;
     gap: 15px;
+    padding: 10px;
 
 }
 
@@ -55,18 +57,23 @@ p {
 
 .number {
     font-size: 50px;
+    color: white;
 }
-#effect p{
-    font-size: 25px ;
+#effect p, #effect h2{
+    font-size: 25px;
+    color: white;
+}
+#effect h2{
+    text-align: center;
+    padding: 20px;
 }
 .regulations {
-
     width: 400px;
     height: 250px;
 
     display: flex;
     align-items: center;
-    gap: 5px;
-    color: white;
+    gap: 10px;
+
 
 }
