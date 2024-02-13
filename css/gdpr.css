@@ -17,30 +17,65 @@
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 40px;
 }
 
 p {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 30px;
 }
 
 #safety {
     height: 250px;
     width: 300px;
-    
+
 }
 
-
 #intro {
+    display: grid;
+    grid-template-rows: 2;
+    gap: 10px;
+}
+
+#flex-intro {
     display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 10px;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.links {
+    display: flex;
+   align-items: center;
+
+}
+
+.links {
+    width: 100%;
+    height: 50px;
+    background-color: var(--cambridge-blue);
+    margin: 5px 0;
+    padding: 5px;
+    border: solid 3px var(--caribbean-current);
+}
+
+.links:hover {
+    background-color: var(--caribbean-current);
+    border-color: var(--cambridge-blue);
+    transition: 1s;
+}
+
+.links a:hover {
+    color: white;
+    transition: 1s;
+
 }
 
 #effect {
@@ -48,7 +83,7 @@ p {
     background-color: #8c5f7bf0;
 }
 
-#effects{
+#effects {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -59,14 +94,20 @@ p {
     font-size: 50px;
     color: white;
 }
-#effect p, #effect h2{
-    font-size: 25px;
+
+#effect p {
     color: white;
 }
-#effect h2{
+
+#effect h2 {
+    color: white;
+}
+
+#effect h2 {
     text-align: center;
     padding: 20px;
 }
+
 .regulations {
     width: 400px;
     height: 250px;
@@ -74,4 +115,17 @@ p {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+#norway {
+    margin: 10px;
+}
+
+#norway h2 {
+    border-bottom: solid 3px var(--cambridge-blue);
+}
+
+#norway p {
+    font-size: 25px;
+    padding: 10px 0;
 }
