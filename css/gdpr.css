@@ -16,8 +16,9 @@
     gap: 20px;
 }
 
-h1 {
+#mini-header h1 {
     font-size: 50px;
+    border-bottom: solid 3px var(--mountbatten-pink);
 }
 
 h2 {
@@ -44,6 +45,7 @@ p {
 #flex-intro {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 a {
@@ -53,7 +55,9 @@ a {
 
 .links {
     display: flex;
-   align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -66,20 +70,24 @@ a {
     border: solid 3px var(--caribbean-current);
     color: black;
 }
-.links:hover{
+
+.links .icon {
+    font-size: 25px;
+}
+
+.links:hover {
     background-color: var(--caribbean-current);
     border-color: var(--cambridge-blue);
-    color: white;
     /* prøver å få til en transition liknende effekt med pilen
     justify-content: space-between; */
-    transition: 2s;
+    transition: 1s;
+
 }
-.links a:hover{
+
+.links a:hover {
     color: white;
     transition: 1s;
 }
-
-
 
 #effect {
     padding: 10px;
@@ -121,7 +129,7 @@ a {
 }
 
 #norway {
-    margin: 10px;
+    margin: 20px;
 }
 
 #norway h2 {
