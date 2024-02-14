@@ -5,7 +5,6 @@
     --cambridge-blue: #9CC5A1; 
     --eminence: #533172; 
 }
-
 #hero{
     /* background-image: url("/bilder/accessibility.jpg");
     background-size: contain; */
@@ -14,16 +13,12 @@
     align-items: center;
     justify-content: center;
 }
-
 #hero .container{
-    padding: 80px;
-
+    padding: 100px;
 }
-
 h1{
     text-align: center;
 }
-
 #intro .container{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -31,7 +26,14 @@ h1{
     gap: 20px;
     padding: 20px;
 }
-
 #intro .container div{
     padding: 20px;    
 }
+section:nth-of-type(2){
+    background-color: var(--eminence);
+}
+
+section:nth-of-type(3){
+    background-color: var(--jungle-green);
+}
+
