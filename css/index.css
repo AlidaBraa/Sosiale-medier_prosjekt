@@ -1,4 +1,19 @@
-#hero{
+:root {
+    --mountbatten-pink: #A28497;
+    --caribbean-current: #216869;
+    --jungle-green: #49A078;
+    --cambridge-blue: #9CC5A1;
+    --eminence: #533172;
+}
+
+#hero {
     background-image: url('../images/forside/forside_hero.jpg');
     min-height: 400px;
+}
+
+
+
+section {
+    align-content: center;
+    display: grid;
 }
