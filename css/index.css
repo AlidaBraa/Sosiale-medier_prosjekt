@@ -8,7 +8,9 @@
 
 #hero {
     background-image: url('../images/forside/forside_hero.jpg');
-    min-height: 400px;
+    min-height: 500px;
+    background-size: cover;
+ 
 }
 
 
