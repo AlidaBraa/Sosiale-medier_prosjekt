@@ -129,28 +129,34 @@ a {
     margin: 20px;
 }
 
-#norway h2 {
+#norway h2{
+    border-bottom: solid 3px var(--cambridge-blue);
+}
+#norway span{
     border-bottom: solid 3px var(--cambridge-blue);
 }
 
 #norway p {
-    font-size: 25px;
     padding: 10px 0;
 }
 
-#norway img{
-    width: 100%;
-    height: 50px;
-    margin: -20px 0;
-}
+/* section om cookies: */
 
-#cookies .title{
+#cookies #title{
     display: flex;
     align-items: center;
+    cursor: pointer;
 
 }
 
 #cookies img{
     width: 120px;
     height: 120px;
+}
+
+.info-cookies{
+    display: none;
+    background-color: #fab6596b;
+    padding: 20px;
+    transition: 2s;
 }

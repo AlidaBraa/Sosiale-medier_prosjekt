@@ -145,27 +145,59 @@
         <div class="container">
             <div>
                 <h2>Personvern i Norge</h2>
-                <p>Norge er ikke medlem av EU så GDPR loven gjelder ikke for Norge. Men i 2018 ble en lov om behandling
-                    av
-                    personopplysninger, personopplysningsloven og samtykke til deltakelse i en beslutning i EØS-komiteen
-                    om
-                    innlemmelse av forordning (EU) nr. 2016/679, en generell personvernforordning, i EØS-avtalen.</p>
+                <p>Personvernlovgivningen i Norge er hovedsakelig regulert av den europeiske personvernforordningen,
+                    alstå GDPR. Selv om Norge ikke er medlem av EU, er GDPR gjeldende gjennom personopplysningsloven fra
+                    2018, som ble vedtatt etter samtykke til deltakelse i en beslutning i EØS-komiteen. Dette
+                    rammeverket krever informert samtykke for behandling av personopplysninger, håndheves av
+                    Datatilsynet og gir enkeltpersoner rettigheter som retten til tilgang og retten til å bli glemt.
+                    Organisasjoner må følge sikkerhetstiltak og inngå databehandleravtaler. Det er viktig å holde seg
+                    oppdatert på eventuelle endringer i lovgivningen for å sikre overholdelse av personvernkravene.</p>
+                    <h2></h2>
             </div>
         </div>
 
     </section>
     <section id="cookies">
         <div class="container">
-            <div class="title">
-                <h2>Hva er egentlig cookies?</h2>
-                <img src="images/gdpr/cookies.png" alt="cookie icon">
-                <div>
-                    
-                </div>
-                <!-- lage en onclick funskjon som får tekst om cookies til å komme ned -->
+            <div>
+                <p>Som vi navigerer gjennom det digitale landskapet, støter vi stadig på betydningsfulle prinsipper for
+                    personvern, særlig her i Norge, hvor beskyttelse av individets rettigheter og personopplysninger er
+                    av ytterste viktighet. Den digitale reisen tar imidlertid en ny vending når vi nærmer oss et
+                    velkjent aspekt av nettbasert samhandling: informasjonskapsler, eller cookies. Disse små datafilene
+                    har blitt en uunngåelig del av vår online-opplevelse, og samtykke til deres bruk har blitt en vanlig
+                    praksis. La oss utforske hvordan våre valg om samtykke til cookies påvirker vår interaksjon med
+                    nettinnhold og vårt personvernunivers</p>
             </div>
+            <div id="title" onclick="showInfo()">
+                <h2 id="cookieHeader">Hva er egentlig cookies?</h2>
+                <img src="images/gdpr/cookies.png" alt="cookie icon">
+            </div>
+            <div class="info-cookies">
+                <p>Cookies er små datafiler som lagres på enheten din når du besøker nettsider. De inneholder
+                    informasjon om dine nettleserpreferanser og brukeratferd. Det finnes to typer cookies:
+                    sessionscookies som slettes når du lukker nettleseren, og vedvarende cookies som lagres for en
+                    stund. Cookies brukes til å forbedre brukeropplevelsen ved å huske innlogging, tilpasse innhold
+                    og samle analytisk informasjon. Noen cookies kan være tredjepartscookies fra andre nettsteder.
+                    Nettsider må be om samtykke før de plasserer visse typer cookies, og du kan administrere dem
+                    gjennom nettleserinnstillingene dine.</p>
+            </div>
+
+
         </div>
     </section>
+
+    <script>
+        function showInfo() {
+            let infoDiv = document.querySelector('.info-cookies'); // Corrected variable name
+            let header = document.getElementById('cookieHeader');
+
+            if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
+                infoDiv.style.display = 'block'
+            } else {
+                infoDiv.style.display = 'none'
+            }
+        }
+    </script>
 
 </body>
 
