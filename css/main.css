@@ -18,7 +18,7 @@ p, li, span, div{
 }
 
 :root{
-    --mountbatten-pink: #A28497; 
+    --mountbatten-pink: #8c5f7bf0;
     --caribbean-current: #216869; 
     --jungle-green: #49A078; 
     --cambridge-blue: #9CC5A1; 
@@ -31,6 +31,7 @@ a {
 
 img{
     width: 100%;
+    border-radius: 10px;
 }
 
 h1{
@@ -46,7 +47,7 @@ p{
 }
 
 /*nav bar*/
-nav {
+header {
     background-color: var(--caribbean-current);
     align-items: center;
     text-decoration: none;
@@ -56,6 +57,7 @@ nav {
 .flexbox {
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 
 
@@ -67,6 +69,7 @@ nav p {
 
 #nav {
     display: flex;
+    justify-content: space-between;
 }
 
 nav li{

@@ -1,5 +1,5 @@
 :root{
-    --mountbatten-pink: #A28497; 
+    --mountbatten-pink: #8c5f7bf0;
     --caribbean-current: #216869; 
     --jungle-green: #49A078; 
     --cambridge-blue: #9CC5A1; 
@@ -8,12 +8,11 @@
 
 section .container {
 	display: grid;
-	gap: 20px;
 }
 
 /*Styler section 1 i cons*/
 #section1{
-    margin-top: 50px;
+    padding: 20px;
 }
 
 #section1 h1{
@@ -23,5 +22,20 @@ section .container {
 #section1 div{
     justify-content: center;
 }
+
+/*Styler hva_er_et_ekkokammer*/
+#hva_er_et_ekkokammer{
+    margin-top: 40px;
+    background-color: var(--cambridge-blue);
+}
+
+#hva_er_et_ekkokammer .container{
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+
 
 
