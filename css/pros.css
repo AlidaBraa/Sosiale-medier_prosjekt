@@ -1,0 +1,19 @@
+:root {
+    --mountbatten-pink: #A28497;
+    --caribbean-current: #216869;
+    --jungle-green: #49A078;
+    --cambridge-blue: #9CC5A1;
+    --eminence: #533172;
+}
+
+#sosiale-medier{
+display: flex;
+flex-direction: column;
+background-color: var(--caribbean-current);
+color: var(--eminence);
+padding: 80px;
+}
+
+.centered h2{
+    text-align: center;
+}
