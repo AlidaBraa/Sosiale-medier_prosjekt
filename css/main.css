@@ -4,6 +4,13 @@ font-family: "Playpen Sans";
 font-family: "Poppins";
 */
 
+h1, h2, h3{
+    font-family: "Playpen Sans";
+}
+
+p, li, span{
+    font-family: "Poppins";
+}
 * {
 	margin: 0;
 	padding: 0;
