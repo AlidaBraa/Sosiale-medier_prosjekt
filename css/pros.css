@@ -6,6 +6,21 @@
     --eminence: #533172;
 }
 
+#mini-header {
+    padding: 20px;
+}
+
+#mini-header div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#mini-header h1 {
+    font-size: 50px;
+    border-bottom: solid 3px var(--mountbatten-pink);
+}
+
 #sosiale-medier{
 display: flex;
 flex-direction: column;
