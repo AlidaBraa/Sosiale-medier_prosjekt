@@ -16,3 +16,8 @@ section {
     align-content: center;
     display: grid;
 }
+
+.sosial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
