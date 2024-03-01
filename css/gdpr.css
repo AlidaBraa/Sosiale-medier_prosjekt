@@ -18,7 +18,6 @@
 }
 
 #mini-header h1 {
-    font-size: 50px;
     border-bottom: solid 3px var(--mountbatten-pink);
 }
 
@@ -143,4 +142,15 @@ a {
     width: 100%;
     height: 50px;
     margin: -20px 0;
+}
+
+#cookies .title{
+    display: flex;
+    align-items: center;
+
+}
+
+#cookies img{
+    width: 120px;
+    height: 120px;
 }
