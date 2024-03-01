@@ -1,9 +1,24 @@
 :root {
-    --mountbatten-pink: #A28497;
+    --mountbatten-pink: #8c5f7bf0;
     --caribbean-current: #216869;
     --jungle-green: #49A078;
     --cambridge-blue: #9CC5A1;
     --eminence: #533172;
+}
+
+#mini-header {
+    padding: 20px;
+}
+
+#mini-header div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#mini-header h1 {
+    font-size: 50px;
+    border-bottom: solid 3px var(--mountbatten-pink);
 }
 
 #sosiale-medier{

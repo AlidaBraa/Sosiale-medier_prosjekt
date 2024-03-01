@@ -1,5 +1,5 @@
 :root {
-    --mountbatten-pink: #A28497;
+    --mountbatten-pink: #8c5f7bf0;
     --caribbean-current: #216869;
     --jungle-green: #49A078;
     --cambridge-blue: #9CC5A1;
@@ -10,7 +10,6 @@
     background-image: url('../images/forside/forside_hero.jpg');
     min-height: 660px;
     background-size: cover;
- 
 }
 
 section {

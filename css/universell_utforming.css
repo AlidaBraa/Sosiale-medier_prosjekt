@@ -5,9 +5,9 @@ font-family: "Poppins";
 */
 
 :root{
-    --mountbatten-pink: #A28497; 
+    --mountbatten-pink: #8c5f7bf0;
     --caribbean-current: #216869; /* used #0d8897 instead sometimes */
-    --jungle-green: #49A078; 
+    --jungle-green: #398461 /*#49A078*/; 
     --cambridge-blue: #9CC5A1; 
     --eminence: #533172; 
 }
@@ -174,5 +174,6 @@ section:nth-of-type(5) img{
 
 section:nth-of-type(7){
     background-color: var(--jungle-green);
+    color: white;
 }
 
