@@ -90,3 +90,35 @@ nav li a:hover {
     text-decoration: underline;
 }
 
+footer{
+    background-color: var(--eminence);
+    color: white;
+    padding: 20px 0;
+}
+
+footer .container{
+    display: grid;
+    grid-template-rows: 40px 1fr;
+}
+
+#footer-title{
+    grid-row: 1/2;
+}
+
+#sources{
+    grid-row: 2/3;
+}
+
+#sources{
+    display: flex;
+    gap: 20px;
+}
+
+footer a{
+    color: white;
+}
+
+a:hover{
+    border-bottom: solid 2px white;
+    transition: 1s;
+}

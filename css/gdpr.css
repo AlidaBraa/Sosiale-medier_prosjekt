@@ -142,6 +142,11 @@ a {
 
 /* section om cookies: */
 
+#segway{
+    background-color: var(--caribbean-current);
+    padding: 20px;
+    color: white;
+}
 #cookies #title{
     display: flex;
     align-items: center;
