@@ -6,29 +6,75 @@
     --eminence: #533172;
 }
 
-#mini-header {
+
+#intro {
     padding: 20px;
 }
 
-#mini-header div {
-    display: flex;
+#intro div {
     justify-content: center;
-    gap: 20px;
 }
 
-#mini-header h1 {
+#header h1 {
     font-size: 50px;
     border-bottom: solid 3px var(--mountbatten-pink);
 }
 
-#sosiale-medier{
-display: flex;
-flex-direction: column;
-background-color: var(--caribbean-current);
-color: var(--eminence);
-padding: 80px;
+p{
+    font-size: 20px;
 }
 
-.centered h2{
-    text-align: center;
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+
 }
+
+.use-title {
+    color: var(--caribbean-current);
+    font-size: 30px;
+}
+
+.use-box {
+    /*flex: 1;*/
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--cambridge-blue);
+    color: black;
+    width: 600px;
+}
+
+.image-box {
+    flex: 1;
+}
+
+.image-box img {
+    width: 400px;
+    height: auto;
+    display: block;
+}
+
+#sosiale-medier {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--mountbatten-pink);
+    color: white;
+    margin-top: 30px;
+    padding: 90px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.centered {
+    text-align: center;
+    font-size: 40px;
+    color: var(--eminence);
+}
+
+#most-used {
+    margin: 0 auto; /* Sentrerer listeelementene */
+}
+
