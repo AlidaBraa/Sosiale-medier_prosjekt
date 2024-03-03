@@ -17,7 +17,65 @@ section {
     display: grid;
 }
 
-.sosial {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+h1{
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+
+/* hva er sosial medier */
+
+.box_1{
+    display: inline-block;
+        width: calc(50% - 20px); /* To bokser ved siden av hverandre med 20px mellomrom */
+        margin: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        vertical-align: top; /* Plassere boksene øverst */
+}
+
+
+
+/* flip the coin*/
+
+#p_og_c{
+    background-color: var(--cambridge-blue);
+}
+
+.flip{
+    background-color: lightgray;
+}
+
+
+/* om innholdet vårt */
+
+h2{
+    text-align: center;
+    background-color: var(--mountbatten-pink);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Justere for å unngå ekstra mellomrom mellom boksene */
+}
+
+.box {
+    flex: 1 0 calc(50% - 20px); /* To bokser ved siden av hverandre med 20px mellomrom */
+    margin: 10px; /* Mellomrom mellom boksene */
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h3{
+    text-align: center; 
 }
