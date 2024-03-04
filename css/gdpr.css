@@ -21,10 +21,6 @@
     border-bottom: solid 3px var(--mountbatten-pink);
 }
 
-h2 {
-    font-size: 40px;
-}
-
 
 #safety {
     height: 250px;
@@ -109,12 +105,10 @@ a {
 
 #effect h2 {
     color: white;
-}
-
-#effect h2 {
     text-align: center;
     padding: 20px;
 }
+
 
 .regulations {
     width: 400px;
@@ -165,4 +159,14 @@ a {
     background-color: #fab6596b;
     padding: 20px;
     transition: 2s;
+}
+
+@media only screen and (max-width: 980px) {
+    .regulations{
+        height: 150px;
+    }
+    .number{
+        font-size: 40px;
+    }
+
 }
