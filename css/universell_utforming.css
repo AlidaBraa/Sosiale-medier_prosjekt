@@ -40,9 +40,7 @@ hr{
 
 #hero{
     background-image: url("/images/universell/world3.jpg");
-    background-size: cover;
-    background-color: var(--cambridge-blue);
-    
+    background-size: cover;    
     color: white;
 }
 
@@ -101,7 +99,8 @@ section:nth-of-type(3) .container{
 }
 
 section:nth-of-type(3){
-    background-color: var(--cambridge-blue);
+    background-color: #49A078;
+    color: black;
 }
 
 section:nth-of-type(4) img{
@@ -150,6 +149,36 @@ h3{
     font-size: 20px;
 }
 
+section:nth-of-type(4) a{
+    padding: 10px;
+    width: fit-content;
+    text-align: center;
+    background-color: var(--cambridge-blue);
+    border: solid 3px var(--caribbean-current);
+    color: black;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* do i need this? */
+    gap: 5px;
+}
+
+section:nth-of-type(4) a span{
+    font-size: 25px;
+    margin: auto;
+}
+
+/*
+#0d8897
+*/
+section:nth-of-type(4) a:hover{
+    background-color: var(--caribbean-current);
+    border-color: var(--cambridge-blue);
+    color: white;
+    transition: background-color 1s, color 2s;
+}
+
+
 section:nth-of-type(5){
     background-color: var(--mountbatten-pink);
 }
@@ -167,12 +196,13 @@ section:nth-of-type(5) h2, section:nth-of-type(5) p{
 }
 
 section:nth-of-type(5) img{
-    width: 470px;
+    width: 100%; 
     margin: auto;
 }
 
 section:nth-of-type(7){
-    background-color: var(--jungle-green);
-    color: white;
+    background-color: var(--cambridge-blue);
 }
+
+
 
