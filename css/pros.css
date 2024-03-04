@@ -15,21 +15,28 @@
     justify-content: center;
 }
 
-#header h1 {
+#overskrift .container{
+    display: grid;
+}
+
+#overskrift h1 {
     font-size: 50px;
     border-bottom: solid 3px var(--mountbatten-pink);
 }
 
-p{
-    font-size: 20px;
+#overskrift div{
+    justify-content: center;
 }
 
-.container {
+
+#section2 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 5%;
-
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .use-title {
@@ -76,5 +83,28 @@ p{
 
 #most-used {
     margin: 0 auto; /* Sentrerer listeelementene */
+}
+
+#grid-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.grid-box {
+    width: 30%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: var(--jungle-green);
+}
+
+.grid-box:hover img {
+    transform: scale(1.1);
+}
+
+.grid-box:hover h2 {
+    color: var(--mountbatten-pink);
 }
 
