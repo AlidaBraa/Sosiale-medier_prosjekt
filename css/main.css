@@ -118,7 +118,7 @@ footer a{
     color: white;
 }
 
-#footer a:hover{
+footer a:hover{
     border-bottom: solid 2px white;
-
+    
 }
