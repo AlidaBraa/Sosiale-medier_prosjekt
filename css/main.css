@@ -4,43 +4,51 @@ font-family: "Playpen Sans"; (titler)
 font-family: "Poppins"; (tekst)
 */
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: "Playpen Sans";
 }
 
-p, li, span, div{
+p,
+li,
+span,
+div {
     font-family: "Poppins";
 }
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-:root{
+:root {
     --mountbatten-pink: #8c5f7bf0;
-    --caribbean-current: #216869; 
-    --jungle-green: #49A078; 
-    --cambridge-blue: #9CC5A1; 
-    --eminence: #533172; 
+    --caribbean-current: #216869;
+    --jungle-green: #49A078;
+    --cambridge-blue: #9CC5A1;
+    --eminence: #533172;
 }
 
 a {
     text-decoration: none;
 }
 
-img{
+img {
     width: 100%;
     border-radius: 10px;
 }
 
-h1{
+h1 {
     font-size: 40px;
 }
-p{
+
+p {
     font-size: 20px;
 }
-.container{
+
+.container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 10px;
@@ -72,7 +80,7 @@ nav p {
     justify-content: space-between;
 }
 
-nav li{
+nav li {
     list-style-type: none;
     margin-left: 5px;
     flex-direction: row;
@@ -90,35 +98,58 @@ nav li a:hover {
     text-decoration: underline;
 }
 
-footer{
+footer {
     background-color: var(--eminence);
     color: white;
     padding: 20px 0;
 }
 
-footer .container{
+footer .container {
     display: grid;
     grid-template-rows: 40px 1fr;
 }
 
-#footer-title{
+#footer-title {
     grid-row: 1/2;
 }
 
-#sources{
+#sources {
     grid-row: 2/3;
 }
 
-#sources{
+#sources {
     display: flex;
     gap: 20px;
 }
 
-footer a{
+footer a {
     color: white;
 }
 
-#footer a:hover{
+footer a:hover {
     border-bottom: solid 2px white;
 
+}
+
+@media only screen and (max-width: 980px) {
+   h1{
+    font-size: 35px;
+   }
+   h2{
+    font-size: 30px;
+   }
+    .container{
+        max-width: 800px;
+    }
+    p{
+        font-size: 18px;}
+    nav p{
+        font-size: 30px;
+    }
+    nav a{
+        font-size: 18px;
+    }
+
+ 
+ 
 }
