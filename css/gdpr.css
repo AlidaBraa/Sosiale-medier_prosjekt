@@ -143,9 +143,10 @@ a {
 /* section om cookies: */
 
 #segway{
-    background-color: var(--caribbean-current);
+    background-color: #E2E9E9;
     padding: 20px;
-    color: white;
+    color: var(--caribbean-current);
+    font-weight: bold;
 }
 #cookies #title{
     display: flex;
