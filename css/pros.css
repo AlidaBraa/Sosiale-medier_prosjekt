@@ -89,22 +89,22 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .grid-box {
-    width: 30%;
-    margin-bottom: 20px;
-    overflow: hidden;
+    width: 400px;
+    margin-top: 20px;
     border-radius: 10px;
-    box-shadow: var(--jungle-green);
+    box-shadow: black;
+    border: 1px solid var(--caribbean-current);
 }
 
-.grid-box:hover img {
+/*
+#grid-box:hover img {
     transform: scale(1.1);
 }
 
-.grid-box:hover h2 {
+#grid-box:hover h2 {
     color: var(--mountbatten-pink);
 }
-
+*/
