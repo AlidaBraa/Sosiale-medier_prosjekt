@@ -69,7 +69,7 @@ h2 {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    /* padding: 20px; den endret på størrelsen til nav-baren på index siden */
 
     text-align: center;
 }
