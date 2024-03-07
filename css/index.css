@@ -69,9 +69,10 @@ h2 {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    /* padding: 20px; den endret på størrelsen til nav-baren på index siden */
 
-    text-align: center;
+    text-align: center; 
+    /* kan være lurt å sette dette et annet sted?, det er veldig generelt å sette det på container */
 }
 
 .row {
