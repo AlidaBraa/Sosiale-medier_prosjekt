@@ -153,18 +153,6 @@ a {
     transition: 2s;
 }
 
-#mySources {
-    background-color: var(--mountbatten-pink);
-    color: white; 
-}
-#mySources a{
-    color: white;
-}
-#mySources ul{
-    display: flex;
-    flex-direction: column;
-    gap: 10px ;
-}
 
 
 
