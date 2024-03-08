@@ -20,7 +20,7 @@
 }
 
 #overskrift h1 {
-    font-size: 50px;
+    /* font-size: 50px; */
     border-bottom: solid 3px var(--mountbatten-pink);
 }
 
