@@ -1,12 +1,3 @@
-:root {
-    --mountbatten-pink: #8c5f7bf0;
-    --caribbean-current: #216869;
-    --jungle-green: #49A078;
-    --cambridge-blue: #9CC5A1;
-    --eminence: #533172;
-}
-
-
 #intro {
     padding: 20px;
 }
@@ -40,7 +31,7 @@
 }
 
 .use-title {
-    color: var(--caribbean-current);
+    color: var(--eminence);
     font-size: 30px;
 }
 
@@ -78,7 +69,7 @@
 .centered {
     text-align: center;
     font-size: 40px;
-    color: var(--eminence);
+    color: white;
 }
 
 #most-used {
