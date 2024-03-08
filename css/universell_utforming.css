@@ -4,75 +4,82 @@ font-family: "Playpen Sans";
 font-family: "Poppins";
 */
 
-:root{
+:root {
     --mountbatten-pink: #8c5f7bf0;
-    --caribbean-current: #216869; /* used #0d8897 instead sometimes */
-    --jungle-green: #398461 /*#49A078*/; 
-    --cambridge-blue: #9CC5A1; 
-    --eminence: #533172; 
+    --caribbean-current: #216869;
+    /* used #0d8897 instead sometimes */
+    --jungle-green: #398461
+        /*#49A078*/
+    ;
+    --cambridge-blue: #9CC5A1;
+    --eminence: #533172;
 }
 
-p{
-    font-size: 18px;
-}
-
-.flex{
+.flex {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-main p{
+main p {
     font-family: "Poppins", sans-serif;
 }
 
-main h2{
+main h2 {
     text-align: center;
     font-family: "Playpen Sans", sans-serif;
     font-size: 30px;
 }
 
-hr{
+hr {
     border-top: 4px solid #533172;
     border-radius: 70px;
     margin: 20px;
 }
 
-#hero{
-    background-image: url("/images/universell/world3.jpg");
-    background-size: cover;    
+#hero {
+    background-image: url("../images/universell/world3.jpg");
+    background-size: cover;
     color: white;
 }
 
-#hero .container{
+#hero .container {
     height: 250px;
 }
 
-#hero .container div:first-of-type{
+#hero .container div:first-of-type {
     background: rgba(61, 61, 128, 0.5);
     box-shadow: 0 0 40px 17px rgba(61, 61, 128, 0.64);
     border-radius: 40px;
     /* padding: 30px; */
 }
 
-#hero h1{
+#hero h1 {
     font-size: 35px;
     font-family: "Playpen Sans";
     text-align: center;
 }
 
-#hero p:first-of-type{
+#hero p:first-of-type {
     font-size: 22px;
     text-align: center;
     font-weight: bold;
     font-style: italic;
 }
 
-#hero p:nth-of-type(2){
+#hero p:nth-of-type(2) {
     text-align: center;
 }
 
-section:nth-of-type(2) .container{
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 25px;
+    padding: 50px 0;
+}
+
+section:nth-of-type(2) .container {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     align-items: center;
@@ -86,11 +93,11 @@ section:nth-of-type(2) .container div{
 }
 */
 
-section:nth-of-type(2) h2{
+section:nth-of-type(2) h2 {
     color: #0d8897;
 }
 
-section:nth-of-type(3) .container{
+section:nth-of-type(3) .container {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
@@ -98,41 +105,41 @@ section:nth-of-type(3) .container{
     padding: 50px 0;
 }
 
-section:nth-of-type(3){
+section:nth-of-type(3) {
     background-color: #49A078;
     color: black;
 }
 
-section:nth-of-type(4) img{
+section:nth-of-type(4) img {
     width: 80px;
     border: 5px solid var(--eminence);
 }
 
-section:nth-of-type(4) .flex div{
+section:nth-of-type(4) .flex div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-section:nth-of-type(4) .flex{
+section:nth-of-type(4) .flex {
     justify-content: space-evenly;
 }
 
-section:nth-of-type(4) > .container > div > p:first-of-type{
+section:nth-of-type(4)>.container>div>p:first-of-type {
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
 }
 
-section:nth-of-type(4) > .container > div span:first-of-type{
+section:nth-of-type(4)>.container>div span:first-of-type {
     font-size: 25px;
 }
 
-section:nth-of-type(4) p{
+section:nth-of-type(4) p {
     text-align: center;
 }
 
-h3{
+h3 {
     font-family: "Poppins";
     font-size: 15px;
     font-weight: 500;
@@ -143,14 +150,14 @@ h3{
     margin-top: 5px;
 }
 
-.colourful{
+.colourful {
     color: #0d8897;
     font-weight: bold;
     font-size: 20px;
 }
 
-section:nth-of-type(4) a{
-    padding: 10px;
+section:nth-of-type(4) a {
+    padding: 3px 15px;
     width: fit-content;
     text-align: center;
     background-color: var(--cambridge-blue);
@@ -159,11 +166,14 @@ section:nth-of-type(4) a{
     margin: auto;
     display: flex;
     align-items: center;
-    flex-wrap: wrap; /* do i need this? */
+    flex-wrap: wrap;
+    /* do i need this? */
     gap: 5px;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
-section:nth-of-type(4) a span{
+section:nth-of-type(4) a span {
     font-size: 25px;
     margin: auto;
 }
@@ -171,7 +181,7 @@ section:nth-of-type(4) a span{
 /*
 #0d8897
 */
-section:nth-of-type(4) a:hover{
+section:nth-of-type(4) a:hover {
     background-color: var(--caribbean-current);
     border-color: var(--cambridge-blue);
     color: white;
@@ -179,30 +189,69 @@ section:nth-of-type(4) a:hover{
 }
 
 
-section:nth-of-type(5){
+section:nth-of-type(5) {
     background-color: var(--mountbatten-pink);
 }
 
-section:nth-of-type(5) h2, section:nth-of-type(5) p{
+section:nth-of-type(5) h2,
+section:nth-of-type(5) p {
     color: white;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 10px;
-    padding: 50px 0;
-}
-
-section:nth-of-type(5) img{
-    width: 100%; 
+section:nth-of-type(5) img {
+    width: 100%;
     margin: auto;
 }
 
-section:nth-of-type(7){
+section:nth-of-type(7) {
     background-color: var(--cambridge-blue);
 }
 
+#info_box {
+    background-color: var(--jungle-green);
+    /* width: 90%; */
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+/*
+.expanding_box {
+    display: grid;
+    grid-template-rows: 0fr;
+    grid-template-columns: 0fr;
+    transition: grid-template-rows 1s, grid-template-columns 1s;
+    background-color: var(--jungle-green);
+    / width: 90%; /
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+*/
+
+/*
+.expanding_box .grid {
+    grid-template-columns: 0fr;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+}
+*/
+
+/*
+.expanding_box > p,img {
+    overflow: hidden;
+}
 
 
+.expanding_box:hover {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+*/
+
+/*
+.expanding_box .grid:hover {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+*/
