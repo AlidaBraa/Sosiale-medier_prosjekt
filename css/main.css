@@ -98,6 +98,24 @@ nav li a:hover {
     text-decoration: underline;
 }
 
+/* kilder på bunnen av siden før footer */
+#mySources {
+    background-color: var(--mountbatten-pink);
+    color: white; 
+}
+#mySources a{
+    color: white;
+}
+#mySources ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px ;
+}
+
+#mySources a:hover{
+    border-bottom: 1px white solid;
+}
+
 footer {
     background-color: var(--eminence);
     color: white;
