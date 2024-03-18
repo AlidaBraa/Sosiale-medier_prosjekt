@@ -47,7 +47,7 @@ h1 {
 }
 
 section:first-of-type{
-    padding-top: 20px;
+    padding: 20px;
 }
 
 .grid {
