@@ -8,8 +8,11 @@
 
 #overskrift .container{
     display: grid;
-    margin-top: 30px;
     margin-bottom: 50px;
+}
+
+#overskrift{
+    padding: 20px;
 }
 
 #overskrift h1 {
