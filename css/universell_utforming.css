@@ -34,7 +34,7 @@ main h2 {
 hr {
     border-top: 4px solid #533172;
     border-radius: 70px;
-    margin: 20px;
+    margin: 35px;
 }
 
 h1 {
@@ -50,7 +50,7 @@ section:first-of-type{
     padding: 20px;
 }
 
-section:nth-of-type(2) h2{
+section:nth-of-type(2) h2 {
     text-align: left;
 }
 
@@ -62,7 +62,7 @@ section:nth-of-type(2) h2{
     margin-top: 40px;
 }
 
-.panel .grid{
+.panel .grid {
     padding: 0;
 }
 
@@ -191,7 +191,7 @@ section:nth-of-type(7) {
 }
 
 /* what is this for? */
-#img{
+#img {
     width: 30%;
 }
 
@@ -206,32 +206,47 @@ section:nth-of-type(7) {
     outline: none;
     transition: 0.4s;
     font-size: 20px;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
     background-color: #ccc;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
     padding: 0 18px;
     background-color: #ccc;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
+}
 
-  
-  .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+
+.accordion:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
-  
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+@media only screen and (max-width: 800px) {
+    .grid {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        max-width: 800px;
+    }
+
+}
