@@ -61,6 +61,10 @@ h2 {
     background-color: var(--mountbatten-pink);
 }
 
+a{
+    color: black;
+}
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -103,4 +107,12 @@ h3 {
 
 #footer-title {
     text-align: left;
+}
+
+/*Media quries*/
+
+@media only screen and (max-width: 850px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
