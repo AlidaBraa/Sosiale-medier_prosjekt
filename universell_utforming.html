@@ -26,19 +26,9 @@
         </nav>
     </header>
     <main>
-        <section id="hero"> <!--1-->
-            <div class="container flex">
-                <div>
-                    <h1>Universell utforming</h1>
-                    <br>
-                    <p>
-                        ❝ The power of the Web is in its universality. Access by everyone
-                        regardless of disability is an essential aspect. ❞
-                    </p>
-                    <p>
-                        - Tim Berners-Lee, W3C Director and inventor of the World Wide Web
-                    </p>
-                </div>
+        <section id="header">
+            <div class="container">
+                <h1>Universell utforming</h1>
             </div>
         </section>
         <section> <!--2-->
@@ -144,53 +134,43 @@
         </section>
         <section> <!--6-->
             <div class="container">
-                <h2>2. Mulig å betjene</h2>
-                <p>
-                    Det andre prinsippet handler om å sikre at alle kan betjene, altså bruke, og navigere
-                    gjennom nettstedet. På nettsider er det mange interaktive elementer som input felter,
-                    kryss-bokser, knapper og lenker. Det er viktig at disse er tydelige, enkle å forstå og mulig
-                    å bruke på flere måter.
-                </p>
-                <div id="info_box">
-                    <div>
-                        De fleste av oss bruker mus for å navigere. Men hva gjør man hvis ikke man kan bruke mus?
-                    </div>
-                    <div>
-                        <div class="grid expanding_box" >
+                <div>
+                    <h2>2. Mulig å betjene</h2>
+                    <p>
+                        Det andre prinsippet handler om å sikre at alle kan betjene, altså bruke, og navigere
+                        gjennom nettstedet. På nettsider er det mange interaktive elementer som input felter,
+                        kryss-bokser, knapper og lenker. Det er viktig at disse er tydelige, enkle å forstå og mulig
+                        å bruke på flere måter (dvs. at nettsiden sakl ha funksjonalitet gjennom andre inndatametoder
+                        enn tastatur).
+                    </p>
+                </div>
+                <br>
+                <div>
+                    <button class="accordion">De fleste av oss bruker mus for å navigere. Men hva gjør man hvis ikke man
+                        kan bruke mus? </button>
+                    <div class="panel">
+                        <div class="grid">
                             <img src="images/universell/betjene.jpg"
                                 alt="bilde av en person som ikke har hånd som må derfor bruke tastatur i stedet for mus">
                             <p>
                                 For eksempel burde det være mulig å bruke tastaturet for de som ikke
                                 kan bruke musenavigasjon (for eksempel for de som ikke kan se). Dette krever riktig
                                 formatering av tekst og innhold og riktig bruk av tager i koding. Slik vil
-                                tastaturnavigasjon og navigasjon med skjermleser tolke elementene riktig og gjøre det mulig
-                                å navigere i innholdet for brukere med funksjonsnedsettelse. Samtidig burde man gjøre det
+                                tastaturnavigasjon og navigasjon med skjermleser tolke elementene riktig og gjøre det
+                                mulig
+                                å navigere i innholdet for brukere med funksjonsnedsettelse. Samtidig burde man gjøre
+                                det
                                 enklere for brukerne å betjene funksjonalitet gjennom andre inndatametoder enn tastatur.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="grid">
-                    <!--
-                    <img src="images/universell/betjene.jpg"
-                        alt="bilde av en person som ikke har hånd som må derfor bruke tastatur i stedet for mus">
-                    <p>
-                        For eksempel burde det være mulig å bruke tastaturet for de som ikke
-                        kan bruke musenavigasjon (for eksempel for de som ikke kan se). Dette krever riktig
-                        formatering av tekst og innhold og riktig bruk av tager i koding. Slik vil
-                        tastaturnavigasjon og navigasjon med skjermleser tolke elementene riktig og gjøre det mulig
-                        å navigere i innholdet for brukere med funksjonsnedsettelse. Samtidig burde man gjøre det
-                        enklere for brukerne å betjene funksjonalitet gjennom andre inndatametoder enn tastatur.
-                    </p>
-                    -->
-                </div>
+                <br>
                 <p>
                     I tillegg er det viktig at brukerne har nok tid til å lese, bruke og svare på innhold. Det
                     bør også være mulighet for å pause, stoppe eller justere tidsbegrensede aktiviteter. Man
                     burde også passe på å ikke utforme innhold på en måte som er kjent for å forårsake
-                    (epileptiske) anfall. Gjør det mulig for brukerne å navigere, finne innhold og vite hvor de
-                    befinner seg. Gjør det enklere for brukerne å betjene funksjonalitet gjennom andre
-                    inndatametoder enn tastatur.
+                    (epileptiske) anfall.
                 </p>
             </div>
         </section>
@@ -233,7 +213,15 @@
                 </div>
             </div>
         </section>
-
+        <section>
+            <div class="container">
+                <button class="accordion">Section 1 </button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
+                    <img src="images/universell/accessibility3.png" id="img">
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>
@@ -272,10 +260,20 @@
             </div>
         </div>
     </footer>
+
     <script>
-        box = document.getElementsByClassName("expanding_box")
-        function expand() {
-            text
+        const accordions = document.getElementsByClassName("accordion");
+        for (const accordion of accordions) { //looper gjennom så jeg kan godt slette dette hvis det bare er en
+            accordion.addEventListener("click", expand);
+            function expand() {
+                this.classList.toggle("active");
+                const panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            }
         }
     </script>
 </body>
