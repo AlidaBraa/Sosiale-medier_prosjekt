@@ -190,6 +190,21 @@
 
         </div>
     </section>
+    <section id="mySources">
+        <div class="container">
+            <div id="list" onclick="showList()">
+                <p id="sourceTitle">Kilder brukt på denne siden: <i class="fa-solid fa-arrow-down"></i></p>
+            </div>
+            <div class="sourceInnhold">
+                <a href="https://lovdata.no/dokument/NL/lov/2018-06-15-38/KAPITTEL_gdpr#KAPITTEL_gdpr"
+                    target="_blank">Lovdata.no,
+                    GDPR</a>
+                <a href="https://www.datatilsynet.no/rettigheter-og-plikter/hva-er-personvern/"
+                    target="_blank">Datatilsynet.no, Hva er personvern?</a>
+            </div>
+        </div>
+    </section>
+    
     <footer>
         <!-- her er starten på en footer, bare å endre det dere føler for og legge inn kilder, 
                     er ikke helt sikker på hvordan jeg skulle skrive inn kilden men det kan vi se mer på senere -->
@@ -230,8 +245,8 @@
 
     <script>
         function showInfo() {
-            let infoDiv = document.querySelector('.info-cookies'); // Corrected variable name
-            let header = document.getElementById('cookieHeader');
+            let infoDiv = document.querySelector('.info-cookies') // Corrected variable name
+            let header = document.getElementById('cookieHeader')
 
             if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
                 infoDiv.style.display = 'block'
@@ -240,7 +255,9 @@
             }
         }
     </script>
+    <script src="main.js">
 
+    </script>
 </body>
 
 </html>

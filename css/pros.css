@@ -1,12 +1,3 @@
-:root {
-    --mountbatten-pink: #8c5f7bf0;
-    --caribbean-current: #216869;
-    --jungle-green: #49A078;
-    --cambridge-blue: #9CC5A1;
-    --eminence: #533172;
-}
-
-
 #intro {
     padding: 20px;
 }
@@ -17,10 +8,12 @@
 
 #overskrift .container{
     display: grid;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 #overskrift h1 {
-    font-size: 50px;
+    /* font-size: 50px; */
     border-bottom: solid 3px var(--mountbatten-pink);
 }
 
@@ -28,8 +21,7 @@
     justify-content: center;
 }
 
-
-#section2 {
+.text {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -39,12 +31,12 @@
     padding: 10px;
 }
 
-.use-title {
-    color: var(--caribbean-current);
+.h2-title {
+    color: var(--eminence);
     font-size: 30px;
 }
 
-.use-box {
+#SoMe-box {
     /*flex: 1;*/
     border: 1px solid black;
     border-radius: 10px;
@@ -58,7 +50,7 @@
     flex: 1;
 }
 
-.image-box img {
+.GIF img {
     width: 400px;
     height: auto;
     display: block;
@@ -70,7 +62,8 @@
     background-color: var(--mountbatten-pink);
     color: white;
     margin-top: 30px;
-    padding: 90px;
+    margin-bottom: 30px;
+    padding: 50px;
     text-align: center;
     font-size: 20px;
 }
@@ -78,33 +71,39 @@
 .centered {
     text-align: center;
     font-size: 40px;
-    color: var(--eminence);
+    color: white;
 }
 
 #most-used {
     margin: 0 auto; /* Sentrerer listeelementene */
 }
 
-#grid-container {
+.use-box {
+    /*flex: 1;*/
+    padding: 20px;
+    color: black;
+    width: 600px;
+}
+
+#kommunikasjon img {
+    width: 500px;
+    height: auto;
+    display: block;
+}
+
+#nettvett {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: var(--cambridge-blue);
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
 }
 
-.grid-box {
-    width: 400px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: black;
-    border: 1px solid var(--caribbean-current);
+.fa-solid.fa-circle-exclamation {
+    font-size: 30px; 
 }
 
-/*
-#grid-box:hover img {
-    transform: scale(1.1);
-}
-
-#grid-box:hover h2 {
-    color: var(--mountbatten-pink);
-}
-*/

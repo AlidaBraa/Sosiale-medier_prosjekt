@@ -1,21 +1,25 @@
-:root{
-    --mountbatten-pink: #8c5f7bf0;
-    --caribbean-current: #216869; 
-    --jungle-green: #49A078; 
-    --cambridge-blue: #9CC5A1; 
-    --eminence: #533172; 
-}
-
 section .container {
 	display: grid;
     gap: 20px;
 }
 
-/*Styler section 1 i cons*/
-#section1{
-    padding: 20px;
+section{
+    margin-top: 40px;
 }
 
+i{
+    font-size: 30px;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+img{
+    margin: auto;
+}
+
+/*Styler section 1 i cons*/
 #section1 h1{
     border-bottom: solid 3px var(--mountbatten-pink);
 }
@@ -25,34 +29,50 @@ section .container {
 }
 
 /*Styler hva_er_et_ekkokammer*/
-#hva_er_et_ekkokammer{
-    margin-top: 40px;
-}
-
 #hva_er_et_ekkokammer .container{
     grid-template-columns: 1fr 1fr;
 }
 
-#hva_er_et_ekkokammer div{
-    margin-top: 40px;
-}
-
-#hva_er_et_ekkokammer #positivt,#negativt{
-    display: flex;
-    justify-content: space-between;
+#hva_er_et_ekkokammer .pop_up{
+    display: grid;
+    grid-template-columns: 1fr 10%;
     padding: 10px;
     border: solid black 2px;
     border-radius: 10px;
+    height: fit-content;
 }
 
-i{
-    font-size: 30px;
+.pop_up p:nth-of-type(2){
+    margin-top: 10px;
+    grid-column: 1/3;
+}
+
+.pop_up.hide p:nth-of-type(2) {
+    display: none;
+    transition: 30ms;
+}
+.pop_up.hide i:nth-of-type(2) {
+    display: none;
+}
+
+.pop_up.hide i:nth-of-type(1){
+    display: block;
+}
+
+.pop_up i:nth-of-type(2){
+    display: block;
+}
+
+.pop_up i:nth-of-type(1){
+    display: none;
 }
 
 /*Styler effekten av ekkokamre*/
 #effekt .container{
     grid-template-columns: 1fr 1fr;
     border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #effekt{
@@ -72,6 +92,9 @@ i{
     background-color: var(--mountbatten-pink);
     border-radius: 10px;
 }
+
+
+
 
 
 

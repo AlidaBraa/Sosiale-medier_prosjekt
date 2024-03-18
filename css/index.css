@@ -1,14 +1,8 @@
-:root {
-    --mountbatten-pink: #8c5f7bf0;
-    --caribbean-current: #216869;
-    --jungle-green: #49A078;
-    --cambridge-blue: #9CC5A1;
-    --eminence: #533172;
-}
+
 
 #hero {
     background-image: url('../images/forside/ikoner.jpg.webp');
-    min-height: 660px;
+    min-height: 500px;
     background-size: cover;
 }
 
@@ -29,6 +23,7 @@ h1 {
     margin: 10px;
     padding: 20px;
     box-sizing: border-box;
+    text-align: left;
 }
 
 .grid {
@@ -64,6 +59,10 @@ h1 {
 h2 {
     text-align: center;
     background-color: var(--mountbatten-pink);
+}
+
+a{
+    color: black;
 }
 
 .container {
@@ -108,4 +107,12 @@ h3 {
 
 #footer-title {
     text-align: left;
+}
+
+/*Media quries*/
+
+@media only screen and (max-width: 850px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }

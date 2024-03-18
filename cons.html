@@ -57,13 +57,22 @@
             <div>
                 <img src="images/ekkokammer/Polarisering.jpg" alt="Bilde av isoprmennesker">
             </div>
-            <div id="positivt">
-                <p>Hva er positivt med ekkokamre?</p>
+            <div class="pop_up hide" id="positivt">
+                <p><b>Hva er positivt med ekkokamre?</b></p>
                 <i class="fa-solid fa-arrow-down"></i>
+                <i class="fa-solid fa-arrow-up"></i>
+                <p>I en gruppe med likesinnede kan man dyrke en felles interesse. Man vet at man alltid
+                    har noen å
+                    snakke med om denne ene hjertesaken, og man kan få mye kunnskap om dette temaet.</p>
             </div>
-            <div id="negativt">
-                <p>Hva er negativt med ekkokamre?</p>
+            <div class="pop_up hide" id="negativt">
+                <p><b>Hva er negativt med ekkokamre?</b></p>
                 <i class="fa-solid fa-arrow-down"></i>
+                <i class="fa-solid fa-arrow-up"></i>
+                <p>I et ekkokammer er det lett å skyve bort alle meninger og fakta som strider mot det
+                    du mener. Fordi
+                    du bare får dine egne meninger reflektert tilbake til deg er det lett å tenke at hele verden tenker
+                    slik som deg.</p>
             </div>
         </div>
     </section>
@@ -82,10 +91,26 @@
                 </p>
             </div>
             <div>
-                <p>Politikken er et spesielt utsatt område. skriv mer her</p>
+                <p>Politikken er et spesielt utsatt område. Når politikken blir mer og mer polarisert fører det til at
+                    befolkningen kan bli delt i to eller flere grupper med sterke motstridende meninger. Folk kan føle
+                    seg splittet og lite representert av politikere. Det kan bli vanskeligere å oppnå kompromisser og å
+                    samarbeide på tvers av ideologi, noe som kan gjøre at polariseringen øker. Etter hvert kan også mer
+                    ekstreme politiske synspunkter oppstå, noe som kan få store konsekvenser.</p>
             </div>
             <div>
                 <img src="images/ekkokammer/Lyd.jpg" alt="Bilde av en stilisert lydbølge.">
+            </div>
+        </div>
+    </section>
+
+    <section id="algoritmen">
+        <div class="container">
+            <div>
+                <h2>Algoritmen</h2>
+                <p>Kan vi havne i et ekkokammer uten å merke det? I algoritmedrevne plattformer er innholdet personlig
+                    tilpasset det du liker. Dette er jo for det meste en god ting, ettersom du får opp det du
+                    interesserer deg for. Allikevel må man huske på at det innholdet man får opp ikke er det samme alle
+                    andre får opp. </p>
             </div>
         </div>
     </section>
@@ -94,7 +119,27 @@
         <div class="container">
             <div>
                 <h2>Forebygging</h2>
-                <p>Hvordan kan vi unngå å falle ned i et ekkokammer?</p>
+                <p>Hvordan kan vi unngå å havne i et ekkokammer? Det er viktig å være bevisst på seg selv og de
+                    holdningene man vet at man allerede har. Du må vurdere hvor utbredt dine holdninger er og om de
+                    samsvarer med resten av samfunnet. Et annet enkelt grep er å omgås folk som har forskjellige
+                    meninger og lytte til disse. Da kan man også skape en mer nyansert og informativ diskusjon.
+                    Kildekritikk er også ekstremt viktig. Ikke tro blindt på det du hører, vurder heller om dette er en
+                    troverdig kilde og gjør research med respekterte kilder på egen hånd.</p>
+            </div>
+            <div>
+                <img src="images/ekkokammer/kildekritikk.png" alt="Bilde som representerer kildekritikk">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="mySources">
+        <div class="container">
+            <div id="list" onclick="showList()">
+                <p id="sourceTitle">Kilder brukt på denne siden: <i class="fa-solid fa-arrow-down"></i></p>
+            </div>
+            <div class="sourceInnhold">
+                
             </div>
         </div>
     </section>
@@ -109,35 +154,33 @@
             <h3 id="footer-title">
                 Våre kilder:
             </h3>
-            <div id="sources">
-                <div>
-                    <p>Sosiale medier:</p>
-                    <ul></ul>
-                </div>
-                <div>
-                    <p>Positivt:</p>
-                    <ul></ul>
-                </div>
-                <div>
-                    <p>Negativt:</p>
-                    <ul></ul>
-                </div>
-                <div>
-                    <ul>
-                        <p>GDPR: </p>
-                        <li><a href="https://lovdata.no/dokument/NL/lov/2018-06-15-38/KAPITTEL_gdpr#KAPITTEL_gdpr">Lovdata.no,
-                                GDPR</a></li>
-                        <li><a href="https://www.datatilsynet.no/rettigheter-og-plikter/hva-er-personvern/">Datatilsynet.no,
-                                Hva er personvern?</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Universell utforming:</p>
-                    <ul></ul>
-                </div>
-            </div>
         </div>
     </footer>
+
+
+
+    <script>
+
+
+        const pop_ups = document.querySelectorAll(".pop_up")
+        for (const pop_up of pop_ups) {
+            pop_up.addEventListener("click", function (evt) {
+                pop_up.classList.toggle("hide");
+            });
+        }
+
+
+
+
+
+    </script>
+    <script src="main.js"></script>
+
+
+
+
+
+
 
 </body>
 
