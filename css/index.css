@@ -59,6 +59,11 @@ h1 {
 h2 {
     text-align: center;
     background-color: var(--mountbatten-pink);
+    color: white;
+}
+
+a{
+    color: black;
 }
 
 .container {
@@ -103,4 +108,12 @@ h3 {
 
 #footer-title {
     text-align: left;
+}
+
+/*Media quries*/
+
+@media only screen and (max-width: 850px) {
+    .container {
+        display: flex;
+    }
 }
