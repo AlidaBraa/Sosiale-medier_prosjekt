@@ -4,17 +4,6 @@ font-family: "Playpen Sans";
 font-family: "Poppins";
 */
 
-:root {
-    --mountbatten-pink: #8c5f7bf0;
-    --caribbean-current: #216869;
-    /* used #0d8897 instead sometimes */
-    --jungle-green: #398461
-        /*#49A078*/
-    ;
-    --cambridge-blue: #9CC5A1;
-    --eminence: #533172;
-}
-
 .flex {
     display: flex;
     align-items: center;
@@ -60,7 +49,7 @@ section:nth-of-type(2) h2 {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 25px;
-    padding: 50px 0;
+    margin-top: 40px;
 }
 
 /* endrer padding i accordion */
