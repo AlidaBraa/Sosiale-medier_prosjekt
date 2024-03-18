@@ -24,6 +24,11 @@ img{
     border-bottom: solid 3px var(--mountbatten-pink);
 }
 
+#section1{
+    padding: 20px;
+    margin-top: 0;
+}
+
 #section1 div{
     justify-content: center;
 }

@@ -59,6 +59,7 @@ h1 {
 h2 {
     text-align: center;
     background-color: var(--mountbatten-pink);
+    color: white;
 }
 
 a{
