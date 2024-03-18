@@ -57,19 +57,19 @@
             <div>
                 <img src="images/ekkokammer/Polarisering.jpg" alt="Bilde av isoprmennesker">
             </div>
-            <div class="pop_up" id="positivt">
+            <div class="pop_up hide" id="positivt">
                 <p><b>Hva er positivt med ekkokamre?</b></p>
                 <i class="fa-solid fa-arrow-down"></i>
                 <i class="fa-solid fa-arrow-up"></i>
-                <p class="display">I en gruppe med likesinnede kan man dyrke en felles interesse. Man vet at man alltid
+                <p>I en gruppe med likesinnede kan man dyrke en felles interesse. Man vet at man alltid
                     har noen å
                     snakke med om denne ene hjertesaken, og man kan få mye kunnskap om dette temaet.</p>
             </div>
-            <div class="pop_up" id="negativt">
+            <div class="pop_up hide" id="negativt">
                 <p><b>Hva er negativt med ekkokamre?</b></p>
                 <i class="fa-solid fa-arrow-down"></i>
                 <i class="fa-solid fa-arrow-up"></i>
-                <p class="display">I et ekkokammer er det lett å skyve bort alle meninger og fakta som strider mot det
+                <p>I et ekkokammer er det lett å skyve bort alle meninger og fakta som strider mot det
                     du mener. Fordi
                     du bare får dine egne meninger reflektert tilbake til deg er det lett å tenke at hele verden tenker
                     slik som deg.</p>
@@ -152,33 +152,6 @@
             <h3 id="footer-title">
                 Våre kilder:
             </h3>
-            <div id="sources">
-                <div>
-                    <p>Sosiale medier:</p>
-                    <ul></ul>
-                </div>
-                <div>
-                    <p>Positivt:</p>
-                    <ul></ul>
-                </div>
-                <div>
-                    <p>Negativt:</p>
-                    <ul></ul>
-                </div>
-                <div>
-                    <ul>
-                        <p>GDPR: </p>
-                        <li><a href="https://lovdata.no/dokument/NL/lov/2018-06-15-38/KAPITTEL_gdpr#KAPITTEL_gdpr">Lovdata.no,
-                                GDPR</a></li>
-                        <li><a href="https://www.datatilsynet.no/rettigheter-og-plikter/hva-er-personvern/">Datatilsynet.no,
-                                Hva er personvern?</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Universell utforming:</p>
-                    <ul></ul>
-                </div>
-            </div>
         </div>
     </footer>
 
@@ -190,19 +163,12 @@
         const pop_ups = document.querySelectorAll(".pop_up")
         for (const pop_up of pop_ups) {
             pop_up.addEventListener("click", function (evt) {
-                const htmlObj = evt.target;
-                const tekst = pop_up.querySelector(".pop_up > p:nth-of-type(2)");
-                tekst.classList.toggle("display");
-                for (let i = 0; i < tekst.length; i++) {
-                    tekst[i].classList.toggle("display");
-                }
+                pop_up.classList.toggle("hide");
             });
         }
 
 
 
-        const pil = document.querySelector("#negativt > i:nth-of-type(2)")
-        pil.classList.add("display")
 
 
     </script>
