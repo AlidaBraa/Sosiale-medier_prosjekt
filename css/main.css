@@ -101,19 +101,20 @@ nav li a:hover {
 /* kilder på bunnen av siden før footer */
 #mySources {
     background-color: var(--mountbatten-pink);
-    color: white; 
-}
-#mySources a{
     color: white;
 }
-#mySources ul{
-    display: flex;
-    flex-direction: column;
-    gap: 10px ;
+
+#mySources a {
+    color: white;
+    max-width: fit-content;
+}
+#mySources a:hover {
+    border-bottom: 1px white solid;
 }
 
-#mySources a:hover{
-    border-bottom: 1px white solid;
+.sourceInnhold {
+    display: none;
+    flex-direction: column;
 }
 
 footer {
@@ -150,24 +151,30 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 980px) {
-   h1{
-    font-size: 35px;
-   }
-   h2{
-    font-size: 30px;
-   }
-    .container{
-        max-width: 800px;
+    h1 {
+        font-size: 35px;
     }
-    p{
-        font-size: 18px;}
-    nav p{
+
+    h2 {
         font-size: 30px;
     }
-    nav a{
+
+    .container {
+        max-width: 800px;
+    }
+
+    p {
         font-size: 18px;
     }
 
- 
- 
+    nav p {
+        font-size: 30px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+
+
 }
