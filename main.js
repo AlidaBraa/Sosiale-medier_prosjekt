@@ -8,3 +8,8 @@ function showList(){
         infoDiv.style.display = 'none'
     }
 }
+
+function toggleImage() {
+    var bilde = document.getElementById('nettvett-img');
+    bilde.classList.toggle('visible');
+}
