@@ -105,7 +105,33 @@
     font-size: 20px;
 }
 
+#nettvett-img {
+    display: none;
+    max-width: 50%; /* Sett maksimal bredde til 80% av foreldrelementet */
+    border-radius: 10px; /* Legg til avrundede hjørner */
+    margin: 20px auto; /* Sentrer bildet horisontalt */
+}
+
+#nettvett-img.visible {
+    display: block;
+}
+
 .fa-solid.fa-circle-exclamation {
     font-size: 30px; 
 }
 
+#news-box {
+    /*flex: 1;*/
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    color: black;
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+#news-img {
+    width: 600px;
+    height: auto;
+    display: block;
+}
