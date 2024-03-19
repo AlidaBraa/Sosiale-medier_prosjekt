@@ -168,6 +168,15 @@ h3 {
     border: 5px solid var(--eminence);
 }
 
+#game{
+    background-color: #9cc5a185;
+    padding: 10px;
+}
+
+#game a:hover{
+    text-decoration: underline;
+}
+
 /*Media quries*/
 
 @media only screen and (max-width: 980px) {
