@@ -1,0 +1,36 @@
+h1{
+    font-size: 37px;
+    text-align: center;
+    color: #216869;
+}
+
+.memory-board {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.memory-card {
+    width: calc(33.33% - 20px);
+    height: 130px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.memory-card.active, .memory-card.matched {
+    background-color: #93678d;
+    color: #fff;
+
+}
+
+.memory-card.active {
+    pointer-events: none;
+}

@@ -117,6 +117,8 @@ nav li a:hover {
     flex-direction: column;
 }
 
+/* footer som ikke er i bruk */
+/* 
 footer {
     background-color: var(--eminence);
     color: white;
@@ -148,7 +150,7 @@ footer a {
 footer a:hover {
     border-bottom: solid 2px white;
 
-}
+} */
 
 @media only screen and (max-width: 980px) {
     h1 {

@@ -118,6 +118,15 @@ h3 {
     text-align: left;
 }
 
+#game{
+    background-color: #9CC5A1;
+    padding: 10px;
+}
+
+#game a:hover{
+    text-decoration: underline;
+}
+
 /*Media quries*/
 
 @media only screen and (max-width: 980px) {
