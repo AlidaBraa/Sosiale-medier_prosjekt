@@ -71,24 +71,37 @@
 
     <div class="container_1">
         <h3 id="overskrift_p_c">Positivt og Negativt</h3>
-        <h4>Positivt</h4>
-        <ul>
-            <li>Finne nyttig informasjon og kunnskap</li>
-            <li>Få råd</li>
-            <li>Finne gode rollemodeller</li>
-            <li>Få økt selvinnsikt</li>
-            <li>Få venner og bevare vennskap</li>
-        </ul>
-
-        <h4>Negativt</h4>
-        <ul>
-            <li>Økt narsisissme</li>
-            <li>Overfladiske forhold</li>
-            <li>Mer stress</li>
-            <li>Økt anonym mobbing</li>
-            <li>Kan være med på å skape urelistisske forventninger</li>
-            <li>Kan skape kroppspress</li>
-        </ul>
+        <!-- flip the coin -->
+        <div class="card container">
+            <div class="card_inner">
+                <div class="card_face card-front">
+                    <div>
+                        <h4>Positivt</h4>
+                        <ul>
+                            <li>Finne nyttig informasjon og kunnskap</li>
+                            <li>Få råd</li>
+                            <li>Finne gode rollemodeller</li>
+                            <li>Få økt selvinnsikt</li>
+                            <li>Få venner og bevare vennskap</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card_face card-back">
+                    <div>
+                        <h4>Negativt</h4>
+                        <ul>
+                            <li>Økt narsisissme</li>
+                            <li>Overfladiske forhold</li>
+                            <li>Mer stress</li>
+                            <li>Økt anonym mobbing</li>
+                            <li>Kan være med på å skape urelistisske forventninger</li>
+                            <li>Kan skape kroppspress</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- flip the coin end -->
     </div>
     <section id="game">
         <div class="container">
@@ -98,7 +111,6 @@
 
         </div>
     </section>
-
 
 
     <div class="container">
@@ -146,6 +158,13 @@
 
     </footer>
     <script src="main.js"></script>
+    <script>
+        //flip the coin JS kode
+        const card = document.querySelector(".card_inner")
+        card.addEventListener("click", function () {
+            card.classList.toggle("flipped");
+        });
+    </script>
 </body>
 
 </html>
