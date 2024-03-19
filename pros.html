@@ -90,15 +90,28 @@
         <h2 class="centered h2">Nettvettregler</h2>
         <p>Selv om sosiale medier åpner opp uendlige ulike muligheter er det viktig å
             holde seg trygg på nett. Vi må altså følge Røde Kors sine nettvettregler. Men hva er disse?</p>
-        <i class="fa-solid fa-circle-exclamation"></i>
-        <!--<img src="images/fordeler/redd-barna.png" alt="Nettvettregler"> -->
+        <i class="fa-solid fa-circle-exclamation" onclick="toggleImage()"></i>
+        <img src="images/fordeler/redd-barna.png" alt="Nettvettregler" id="nettvett-img">
     </section>
+    
+    <script>
+    function toggleImage() {
+        var bilde = document.getElementById('nettvett-img');
+        bilde.classList.toggle('visible');
+    }
+    </script>
 
-    <section id="nyheter">
-
+    <section class="text">
+        <div id="news-box">
+            <h2 class="h2-title">Nyheter</h2>
+            <p>Rask spredning av nyheter er også en viktig fordel med sosiale medier.
+                Dette gjør det enkelt å få med seg nyheter i nærområdet eller rundt om i verden. 
+            </p>
+        </div>
+        <div id="news-img">
+            <img src="images/fordeler/nyheter.png" alt="Nyheter på sosiale medier">
+        </div>
     </section>
-
-
 
 
 <section id="mySources">
