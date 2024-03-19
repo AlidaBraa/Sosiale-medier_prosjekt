@@ -18,7 +18,7 @@
         <nav id="nav" class="container">
             <div class="flexbox">
                 <a href="index.html">
-                   <h1 id="overskrift">Sosiale medier</h1> 
+                    <h1 id="overskrift">Sosiale medier</h1>
                 </a>
             </div>
             <div class="flexbox">
@@ -39,7 +39,7 @@
         </div>
     </section>
 
-    
+
 
     <div class="container grid">
         <h2>Hva er sosiale medier?</h2>
@@ -71,26 +71,38 @@
 
     <div class="container_1">
         <h3 id="overskrift_p_c">Positivt og Negativt</h3>
-        <h4>Positivt</h4>
-        <ul>
-            <li>Finne nyttig informasjon og kunnskap</li>
-            <li>Få råd</li>
-            <li>Finne gode rollemodeller</li>
-            <li>Få økt selvinnsikt</li>
-            <li>Få venner og bevare vennskap</li>
-        </ul>
-
-        <h4>Negativt</h4>
-        <ul>
-            <li>Økt narsisissme</li>
-            <li>Overfladiske forhold</li>
-            <li>Mer stress</li>
-            <li>Økt anonym mobbing</li>
-            <li>Kan være med på å skape urelistisske forventninger</li>
-            <li>Kan skape kroppspress</li>
-        </ul>
+        <!-- flip the coin -->
+        <div class="card container">
+            <div class="card_inner">
+                <div class="card_face card-front">
+                    <div>
+                        <h4>Positivt</h4>
+                        <ul>
+                            <li>Finne nyttig informasjon og kunnskap</li>
+                            <li>Få råd</li>
+                            <li>Finne gode rollemodeller</li>
+                            <li>Få økt selvinnsikt</li>
+                            <li>Få venner og bevare vennskap</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card_face card-back">
+                    <div>
+                        <h4>Negativt</h4>
+                        <ul>
+                            <li>Økt narsisissme</li>
+                            <li>Overfladiske forhold</li>
+                            <li>Mer stress</li>
+                            <li>Økt anonym mobbing</li>
+                            <li>Kan være med på å skape urelistisske forventninger</li>
+                            <li>Kan skape kroppspress</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- flip the coin end -->
     </div>
-
 
 
     <div class="container">
@@ -124,8 +136,8 @@
         <div class="container">
             <div id="list" onclick="showList()">
                 <p id="sourceTitle">Kilder brukt på denne siden: <i class="fa-solid fa-arrow-down"></i></p>
-        
-                
+
+
             </div>
             <div class="sourceInnhold">
                 <a href="https://snl.no/sosiale_medier"> Snl.no, sosiale medier</a>
@@ -134,9 +146,16 @@
     </section>
 
     <footer>
-        
+
     </footer>
     <script src="main.js"></script>
+    <script>
+        //flip the coin JS kode
+        const card = document.querySelector(".card_inner")
+        card.addEventListener("click", function () {
+            card.classList.toggle("flipped");
+        });
+    </script>
 </body>
 
 </html>
