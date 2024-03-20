@@ -98,6 +98,18 @@ img{
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+    #section1 .container{
+        width: fit-content;
+    }
+
+    section .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
 
 
 
