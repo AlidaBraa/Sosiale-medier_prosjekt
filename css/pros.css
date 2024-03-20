@@ -107,7 +107,7 @@
 
 #nettvett-img {
     display: none;
-    max-width: 50%; /* Sett maksimal bredde til 80% av foreldrelementet */
+    max-width: 40%; /* Sett maksimal bredde til 80% av foreldrelementet */
     border-radius: 10px; /* Legg til avrundede hjørner */
     margin: 20px auto; /* Sentrer bildet horisontalt */
 }
