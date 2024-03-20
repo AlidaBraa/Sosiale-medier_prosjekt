@@ -13,6 +13,7 @@ terms.sort(() => Math.random() - 0.5)
 
 const memoryBoard = document.getElementById('memoryBoard')
 let activeCard = null
+let firstCard = null
 let activeTerm = null
 let matchedPairs = 0
 
@@ -38,6 +39,7 @@ function flipCard(card, matchTerm) {
         if (!activeCard) {
             // Lagrer det første kortet som er snudd
             activeCard = card
+            firstCard = card
             activeTerm = matchTerm
         } else {
             // Hvis det andre kortet matches med det første
@@ -46,6 +48,10 @@ function flipCard(card, matchTerm) {
                 card.classList.add('matched')
                 activeCard.classList.add('matched')
                 matchedPairs += 1
+                // For å få en annen farge på de ulike parene:
+                card.classList.add('matched-' + matchedPairs)
+                activeCard.classList.add('matched-' + matchedPairs)
+
 
                 // Hvis alle par er matchet, viser en melding
                 if (matchedPairs === terms.length) {
@@ -57,7 +63,7 @@ function flipCard(card, matchTerm) {
                 // Hvis kortene ikke matcher, snur dem tilbake etter en liten forsinkelse
                 setTimeout(() => {
                     card.classList.remove('active')
-                    activeCard.classList.remove('active')
+                    firstCard.classList.remove('active')
                 }, 1000)
             }
             activeCard = null

@@ -28,9 +28,15 @@ h1{
 .memory-card.active, .memory-card.matched {
     background-color: #93678d;
     color: #fff;
-
 }
 
 .memory-card.active {
     pointer-events: none;
+}
+
+.memory-card.matched.matched-1 {
+    background-color: #23678d;
+}
+.memory-card.matched.matched-2 {
+    background-color: #23611d;
 }

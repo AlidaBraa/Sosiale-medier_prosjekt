@@ -54,7 +54,6 @@ img{
 
 .pop_up.hide p:nth-of-type(2) {
     display: none;
-    transition: 30ms;
 }
 .pop_up.hide i:nth-of-type(2) {
     display: none;
