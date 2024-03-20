@@ -49,7 +49,7 @@ section:nth-of-type(2) h2 {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 25px;
-    margin-top: 40px;
+    margin: 30px 0;
 }
 
 /* endrer padding i accordion */
@@ -114,6 +114,7 @@ h3 {
     margin-top: 5px;
 }
 
+/* for å style noen ord og tall */
 .colourful {
     color: #0d8897;
     font-weight: bold;
@@ -131,16 +132,9 @@ section:nth-of-type(4) a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    /* do i need this? */
     gap: 5px;
     border-radius: 10px;
     font-size: 20px;
-}
-
-/* not sure if i need this */
-section:nth-of-type(4) a span {
-    font-size: 25px;
-    margin: auto;
 }
 
 /* linken i section om de 4 prinsippene */
@@ -160,22 +154,25 @@ section:nth-of-type(5) p {
     color: white;
 }
 
-/* sjekk om alle img er sånn */
 section:nth-of-type(5) img {
     width: 100%;
     margin: auto;
+}
+
+section:nth-of-type(6) p{
+    margin: 20px 0;    
+}
+
+section:nth-of-type(6) .grid p{
+    margin: 0;    
 }
 
 section:nth-of-type(7) {
     background-color: var(--cambridge-blue);
 }
 
-/* what is this for? */
-#img {
-    width: 30%;
-}
-
-/* Style the buttons that are used to open and close the accordion panel */
+/* her kommer styling for accordion i section 6 */
+/* styler delen som brukes til å åpne og lukke accordion */
 .accordion {
     background-color: #eee;
     cursor: pointer;
@@ -188,13 +185,13 @@ section:nth-of-type(7) {
     font-size: 20px;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* Legger til en bakgrunnsfarge på knappen hvis den klikkes på (legger til .active-klassen med JS), og når man flytter musen over den (hover) */
 .active,
 .accordion:hover {
     background-color: #ccc;
 }
 
-/* Style the accordion panel. Note: hidden by default */
+/* Styler den delen av accordion som ekspanderer når man klikker på knappen. Denne delen er hidden by default */
 .panel {
     padding: 0 18px;
     background-color: #ccc;
@@ -203,30 +200,63 @@ section:nth-of-type(7) {
     transition: max-height 0.2s ease-out;
 }
 
-
+/* legger til tegn på knapp */
 .accordion:after {
-    content: '\02795';
-    /* Unicode character for "plus" sign (+) */
+    content: '\02795'; /* Unicode for (+) tegn */
     font-size: 13px;
     color: #777;
     float: right;
     margin-left: 5px;
 }
 
+/* tegnet endrer seg etter at man klikker på det */
 .active:after {
-    content: "\2796";
-    /* Unicode character for "minus" sign (-) */
+    content: "\2796"; /* Unicode for (-) tegn */
 }
 
 @media only screen and (max-width: 800px) {
     .grid {
         display: block;
     }
-}
 
-@media only screen and (max-width: 800px) {
     .container {
-        max-width: 800px;
+        max-width: 700px;
     }
 
+    img{
+        width: 70%;
+        margin: auto;
+        display: block;
+    }
+
+    section:nth-of-type(2) h2 {
+        text-align: center;
+    }
+
+    p{
+        margin: 20px 0;
+    }
+
+    section:nth-of-type(4) p{
+        margin: 0;
+    }
+
+    .grid{
+        margin-top: 0;
+    }
+
+    section:nth-of-type(3) .grid{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    section:nth-of-type(6) .grid{
+        margin: 30px;    
+    }
+
+    section:nth-of-type(6) .grid p{
+        margin-top: 20px;    
+    }
 }
+
