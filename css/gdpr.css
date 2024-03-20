@@ -166,3 +166,13 @@ a {
     }
 
 }
+
+@media only screen and (max-width: 610px){
+   nav a{
+    font-size: 20px;
+   }
+   
+    #flex-intro{
+        flex-wrap: wrap;
+    }
+}
