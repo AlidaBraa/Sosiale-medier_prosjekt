@@ -19,6 +19,13 @@ img{
     margin: auto;
 }
 
+#drop_down{
+    display: none;
+    color: white;
+}
+
+
+
 /*Styler section 1 i cons*/
 #section1 h1{
     border-bottom: solid 3px var(--mountbatten-pink);
@@ -38,13 +45,19 @@ img{
     grid-template-columns: 1fr 1fr;
 }
 
-#hva_er_et_ekkokammer .pop_up{
+.pop_up{
     display: grid;
     grid-template-columns: 1fr 10%;
     padding: 10px;
     border: solid black 2px;
     border-radius: 10px;
-    height: fit-content;
+    height: 250px;
+    transition: 1s;
+}
+
+.pop_up.hide{
+    height: 50px;
+    transition: 1s;
 }
 
 .pop_up p:nth-of-type(2){
@@ -53,8 +66,13 @@ img{
 }
 
 .pop_up.hide p:nth-of-type(2) {
-    display: none;
+    overflow: hidden;
 }
+
+.pop_up p:nth-of-type(2){
+    overflow: hidden;
+}
+
 .pop_up.hide i:nth-of-type(2) {
     display: none;
 }
@@ -70,6 +88,7 @@ img{
 .pop_up i:nth-of-type(1){
     display: none;
 }
+
 
 /*Styler effekten av ekkokamre*/
 #effekt .container{
@@ -97,7 +116,7 @@ img{
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     #section1 .container{
         width: fit-content;
     }
@@ -105,6 +124,14 @@ img{
     section .container{
         display: flex;
         flex-direction: column;
+    }
+
+    #drop_down{
+        display: block;
+    }
+
+    #drop_down_options{
+        display: none;
     }
 
 }
