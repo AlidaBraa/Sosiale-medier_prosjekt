@@ -58,6 +58,7 @@ function flipCard(card, matchTerm) {
                     setTimeout(() => {
                         alert('Gratulerer, du har matchet alle begrepene!')
                     }, 500)
+                    applauseSound.play(); // Spiller av lyd (applaus)
                 }
             } else {
                 setTimeout(() => {
@@ -99,3 +100,4 @@ terms.forEach((term, index) => {
     memoryBoard.appendChild(termCard)
     memoryBoard.appendChild(definitionCard)
 })
+

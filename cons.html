@@ -23,22 +23,26 @@
                     <p>Sosiale medier</p>
                 </a>
             </div>
-            <div id="drop_down_options" class="flexbox">
+            <div id="nav_bred" class="flexbox">
 
                 <li><a href="pros.html">Positivt</a></li>
                 <li><a href="cons.html">Negativt</a></li>
                 <li><a href="GDPR.html">Personvern</a></li>
                 <li><a href="universell_utforming.html">Universell utforming</a></li>
-
             </div>
-            <div onclick="menu()" id="drop_down">
-                <li><i class="fa-solid fa-bars"></i></li>
-                <div>
-                    <li>Link1</li>
-                    <li>Link2</li>
-                    <li>Link3</li>
+
+            <div id="div_meny">
+                <div onclick="menu()" id="drop_down">
+                    <li><i class="fa-solid fa-bars"></i></li>
+                </div>
+                <div id="linker" class="show">
+                    <li><a href="pros.html">Positivt</a></li>
+                    <li><a href="cons.html">Negativt</a></li>
+                    <li><a href="GDPR.html">Personvern</a></li>
+                    <li><a href="universell_utforming.html">Universell utforming</a></li>
                 </div>
             </div>
+
         </nav>
     </header>
 
@@ -147,7 +151,7 @@
                 <p id="sourceTitle">Kilder brukt på denne siden: <i class="fa-solid fa-arrow-down"></i></p>
             </div>
             <div class="sourceInnhold">
-                
+
             </div>
         </div>
     </section>
@@ -163,12 +167,9 @@
             });
         }
 
-        const drop_down = document.getElementById("drop_down")
-        const options = document.getElementById("drop_down_options")
-
-        function menu(){
-            const opt1 = document.createElement("p")
-            opt1.innerHTML = "Positiv"
+        function menu() {
+            const linker = document.getElementById("linker")
+            linker.classList.toggle("show")
         }
 
 

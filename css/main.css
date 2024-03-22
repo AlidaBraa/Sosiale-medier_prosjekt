@@ -60,6 +60,15 @@ header {
     align-items: center;
     text-decoration: none;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+section:nth-of-type(1){
+    margin-top: 90px;
 }
 
 .flexbox {
@@ -75,9 +84,14 @@ nav p {
     color: white;
 }
 
+nav i{
+    font-size: 30px;
+}
+
 #nav {
     display: flex;
     justify-content: space-between;
+    height: 90px;
 }
 
 nav li {
@@ -96,6 +110,31 @@ nav li a {
 
 nav li a:hover {
     text-decoration: underline;
+}
+
+/*Nav-bar smal skjerm*/
+#drop_down{
+    display: none;
+    color: white;
+    margin: auto;
+}
+
+#linker{
+    color: white;
+    background-color: #58a4a5;
+    transition: 1s;
+    height: max-content;
+    display: none;
+}
+
+.show{
+    display: none;
+}
+
+#div_meny{
+    display: flex;
+    flex-direction: row-reverse;
+    position: sticky;
 }
 
 /* kilder på bunnen av siden før footer */
@@ -181,7 +220,25 @@ footer a:hover {
 
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 700px){
+    #drop_down{
+        display: block;
+    }
+
+    #nav_bred{
+        display: none;
+    }
+
+    #linker{
+        display: block;
+    }
+
+    .show{
+        display: block;
+        height: 0px;
+        opacity: 0;
+        transition: 1s;
+    }
 
 
 }

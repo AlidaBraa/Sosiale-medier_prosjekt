@@ -19,12 +19,6 @@ img{
     margin: auto;
 }
 
-#drop_down{
-    display: none;
-    color: white;
-}
-
-
 
 /*Styler section 1 i cons*/
 #section1 h1{
@@ -33,7 +27,6 @@ img{
 
 #section1{
     padding: 20px;
-    margin-top: 0;
 }
 
 #section1 div{
@@ -126,13 +119,6 @@ img{
         flex-direction: column;
     }
 
-    #drop_down{
-        display: block;
-    }
-
-    #drop_down_options{
-        display: none;
-    }
 
 }
 
