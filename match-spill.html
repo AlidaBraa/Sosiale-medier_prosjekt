@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Spill</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <h1>Match begrepet med riktig forklaring</h1>
+    <div id="victory">
+        <p>Wow du kan virkelig begrepene dine! Hva vil du gjøre nå?</p>
+        <a href="match-spill.html"><button id="newRound">Start en ny runde</button></a>
+        <a href="index.html"> <button id="return">Gå tilbake til hovedsiden</button></a>
+    </div>
+
     <div class="memory-board" id="memoryBoard">
         <!-- Memory cards will be dynamically generated here -->
     </div>
@@ -15,4 +23,5 @@
     <audio id="applause-sound" src="applaus.mp3"></audio>
     <script src="script.js"></script>
 </body>
+
 </html>
