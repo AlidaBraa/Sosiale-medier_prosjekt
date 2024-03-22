@@ -60,6 +60,15 @@ header {
     align-items: center;
     text-decoration: none;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+main{
+    margin-top: 90px;
 }
 
 .flexbox {
@@ -73,6 +82,10 @@ nav p {
     font-size: 50px;
     margin: 10px;
     color: white;
+}
+
+nav i{
+    font-size: 30px;
 }
 
 #nav {

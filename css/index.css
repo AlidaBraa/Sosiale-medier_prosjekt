@@ -175,7 +175,11 @@ h3 {
     justify-content: center;
 }
 
-.card ul{
+.fun {
+    padding: 20px 50px;
+}
+
+.card ul, .fun ul {
     text-align: left;
 }
 
