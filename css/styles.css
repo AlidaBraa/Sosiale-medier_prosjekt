@@ -1,4 +1,4 @@
-h1{
+h1 {
     font-size: 37px;
     text-align: center;
     color: #216869;
@@ -25,7 +25,8 @@ h1{
     transition: background-color 0.3s ease;
 }
 
-.memory-card.active, .memory-card.matched {
+.memory-card.active,
+.memory-card.matched {
     background-color: #93678d;
     color: #fff;
 }
@@ -37,6 +38,59 @@ h1{
 .memory-card.matched.matched-1 {
     background-color: #23678d;
 }
+
 .memory-card.matched.matched-2 {
     background-color: #23611d;
+}
+
+.memory-card.matched.matched-3 {
+    background-color: #c78c3a;
+}
+
+.memory-card.matched.matched-4 {
+    background-color: #611d49;
+}
+
+.memory-card.matched.matched-5 {
+    background-color: #5e0b1c;
+}
+
+.memory-card.matched.matched-6 {
+    background-color: #6b3563;
+}
+
+/* legger til shake effekt når man tar feil */
+.shake {
+    animation: shake 0.5s;
+}
+
+.wrong {
+    background-color: rgb(135, 14, 14);
+    color: white;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-5px);
+    }
+
+    40% {
+        transform: translateX(5px);
+    }
+
+    60% {
+        transform: translateX(-5px);
+    }
+
+    80% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }

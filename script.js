@@ -60,14 +60,34 @@ function flipCard(card, matchTerm) {
                     }, 500)
                 }
             } else {
-                // Hvis kortene ikke matcher, snur dem tilbake etter en liten forsinkelse
                 setTimeout(() => {
                     card.classList.remove('active')
                     firstCard.classList.remove('active')
+
+                    // Legg til ristingseffekten
+                    card.classList.add('shake')
+                    firstCard.classList.add('shake')
+                    card.classList.add('wrong')
+                    firstCard.classList.add('wrong')
+
+                    // Fjern ristingseffekten etter en kort forsinkelse
+                    setTimeout(() => {
+                        card.classList.remove('shake')
+                        firstCard.classList.remove('shake')
+                        card.classList.remove('wrong')
+                        firstCard.classList.remove('wrong')
+                    }, 500)
                 }, 1000)
+                // // Hvis kortene ikke matcher, snur dem tilbake etter en liten forsinkelse
+                // setTimeout(() => {
+                //     card.classList.remove('active')
+                //     firstCard.classList.remove('active')
+                // }, 1000)
             }
+
             activeCard = null
             activeTerm = null
+
         }
     }
 }
