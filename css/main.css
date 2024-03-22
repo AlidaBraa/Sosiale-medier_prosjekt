@@ -67,7 +67,7 @@ header {
     z-index: 99;
 }
 
-main{
+section:nth-of-type(1){
     margin-top: 90px;
 }
 
