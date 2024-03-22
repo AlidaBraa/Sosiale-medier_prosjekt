@@ -53,7 +53,7 @@
         </div>
     </section>
     <section id="intro">
-        <div class="container" >
+        <div class="container">
             <div id="flex-intro">
                 <div>
                     <h2>Hva er personvern?</h2>
@@ -197,15 +197,11 @@
                     Nettsider må be om samtykke før de plasserer visse typer cookies, og du kan administrere dem
                     gjennom nettleserinnstillingene dine.</p>
             </div>
-
-
         </div>
     </section>
     <section id="mySources">
         <div class="container">
-            <div id="list" onclick="showList()">
-                <p id="sourceTitle">Kilder brukt på denne siden: <i class="fa-solid fa-arrow-down"></i></p>
-            </div>
+            <button id="list" onclick="showList()">Kilder</button>
             <div class="sourceInnhold">
                 <a href="https://lovdata.no/dokument/NL/lov/2018-06-15-38/KAPITTEL_gdpr#KAPITTEL_gdpr"
                     target="_blank">Lovdata.no,
@@ -215,28 +211,43 @@
             </div>
         </div>
     </section>
-    
+
     <footer>
-        <!-- her er starten på en footer, bare å endre det dere føler for og legge inn kilder, 
-                    er ikke helt sikker på hvordan jeg skulle skrive inn kilden men det kan vi se mer på senere -->
         <div class="container">
-            
+            <div>
+                <h2>Vårt formål:</h2>
+                <p>På vår nettside er hovedformålet at besøkende skal ta en pause, så vi kan informere dem om sosiale
+                    medier og deres innvirkning. Vi ønsker å fange oppmerksomheten deres og veilede dem gjennom vårt
+                    innhold, slik at de kan få en bedre forståelse av hvordan sosiale medier fungerer, deres fordeler og
+                    ulemper.</p>
+            </div>
+            <div id="footer-logo"> <i class="footer-icon fa-solid fa-pause"></i></div>
+            <div>
+                <h2>Hvem er egentlig "vi"?</h2>
+                <p> Vi er</p>
+                <ul>
+                    <li>Alida Myklatun</li>
+                    <li>Atike Ipek</li>
+                    <li>Betaniya Dejene</li>
+                    <li>Eline Holthe</li>
+                    <li>Sarah Tydal Venold</li>
+                </ul>
+            </div>
         </div>
     </footer>
 
     <script>
         function showInfo() {
-            let infoDiv = document.querySelector('.info-cookies') // Corrected variable name
-            let header = document.getElementById('cookieHeader')
+            let infoDiv = document.querySelector('.info-cookies');
+            let header = document.getElementById('cookieHeader');
 
-            if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
-                infoDiv.style.display = 'block'
-                infoDiv.style.transition = '4s'
+            if (infoDiv.style.maxHeight === '0px') {
+                infoDiv.style.maxHeight = infoDiv.scrollHeight + 'px'; // Viser div ved å endre max-height til full høyde
             } else {
-                infoDiv.style.display = 'none'
-                infoDiv.style.transition = '4s'
+                infoDiv.style.maxHeight = '0'; // Skjuler div ved å sette max-height til null
             }
         }
+
     </script>
     <script src="main.js">
 
