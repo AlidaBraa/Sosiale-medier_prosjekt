@@ -107,13 +107,18 @@
 
 #nettvett-img {
     display: none;
-    max-width: 40%; /* Sett maksimal bredde til 80% av foreldrelementet */
-    border-radius: 10px; /* Legg til avrundede hjørner */
-    margin: 20px auto; /* Sentrer bildet horisontalt */
+    max-width: 40%; 
+    border-radius: 10px; 
+    margin: 20px auto; 
+    opacity: 0;
+    height: 0;
 }
 
 #nettvett-img.visible {
     display: block;
+    opacity: 1;
+    max-width: 40%;
+    height: 700px;
 }
 
 .fa-solid.fa-circle-exclamation {
@@ -124,12 +129,12 @@
     /*flex: 1;*/
     padding: 20px;
     color: black;
-    width: 800px;
+    width: 1000px;
     margin-bottom: 10px;
 }
 
 #news-img {
-    width: 800px;
+    width: 1000px;
     height: auto;
     display: block;
 }
