@@ -7,7 +7,7 @@
 
 section {
     align-content: center;
-    display: grid;
+    /* display: grid; unødvendig */
 
 }
 
@@ -70,9 +70,9 @@ h1 {
 
 /* om innholdet vårt */
 
-h2 {
+.grid h2, .ourContent h2 {
     text-align: center;
-    color: black;
+    /* color: black; litt for generelt*/
     margin-bottom: 10px;
 }
 
@@ -85,8 +85,12 @@ a {
     margin: 0 auto;
     /* padding: 20px; den endret på størrelsen til nav-baren på index siden */
 
-    text-align: center;
+    /* text-align: center; */
     /* kan være lurt å sette dette et annet sted?, det er veldig generelt å sette det på container */
+}
+
+.ourContent{
+    text-align: center;
 }
 
 .row {
