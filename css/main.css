@@ -13,7 +13,9 @@ h3 {
 p,
 li,
 span,
-div {
+div,
+a,
+button {
     font-family: "Poppins";
 }
 
@@ -29,6 +31,7 @@ div {
     --jungle-green: #49A078;
     --cambridge-blue: #9CC5A1;
     --eminence: #533172;
+    --blue: #3A445D;
 }
 
 a {
@@ -60,6 +63,15 @@ header {
     align-items: center;
     text-decoration: none;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+section:nth-of-type(1) {
+    margin-top: 90px;
 }
 
 .flexbox {
@@ -73,6 +85,10 @@ nav p {
     font-size: 50px;
     margin: 10px;
     color: white;
+}
+
+nav i {
+    font-size: 30px;
 }
 
 #nav {
@@ -100,42 +116,47 @@ nav li a:hover {
 }
 
 /*Nav-bar smal skjerm*/
-#drop_down{
+#drop_down {
     display: none;
     color: white;
     margin: auto;
 }
 
-#linker{
+#linker {
     color: white;
     background-color: #58a4a5;
-    transition: 2s;
+    transition: 1s;
     height: max-content;
     display: none;
 }
 
-.show{
+.show {
     display: none;
 }
 
-#div_meny{
+#div_meny {
     display: flex;
     flex-direction: row-reverse;
     position: sticky;
 }
 
 /* kilder på bunnen av siden før footer */
-#mySources {
-    background-color: var(--mountbatten-pink);
+#mySources button {
     color: white;
+    background-color: #533172;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 0 5px;
+    width: 100px;
 }
 
 #mySources a {
-    color: white;
+    padding: 5px;
     max-width: fit-content;
 }
+
 #mySources a:hover {
-    border-bottom: 1px white solid;
+    border-bottom: 2px black solid;
 }
 
 .sourceInnhold {
@@ -143,40 +164,31 @@ nav li a:hover {
     flex-direction: column;
 }
 
-/* footer som ikke er i bruk */
-/* 
-footer {
-    background-color: var(--eminence);
+footer{
+    background-color: var(--blue);
     color: white;
-    padding: 20px 0;
+    padding: 20px;
 }
 
-footer .container {
-    display: grid;
-    grid-template-rows: 40px 1fr;
+footer p{
+    font-size: 18px;
 }
 
-#footer-title {
-    grid-row: 1/2;
+footer .container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
 }
 
-#sources {
-    grid-row: 2/3;
-}
-
-#sources {
+#footer-logo{
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
-
-footer a {
-    color: white;
+.footer-icon{
+    font-size: 250px;
+    opacity: 0.8;
 }
-
-footer a:hover {
-    border-bottom: solid 2px white;
-
-} */
 
 @media only screen and (max-width: 980px) {
     h1 {
@@ -207,24 +219,24 @@ footer a:hover {
 
 }
 
-@media only screen and (max-width: 700px){
-    #drop_down{
+@media only screen and (max-width: 700px) {
+    #drop_down {
         display: block;
     }
 
-    #nav_bred{
+    #nav_bred {
         display: none;
     }
 
-    #linker{
+    #linker {
         display: block;
     }
 
-    .show{
+    .show {
         display: block;
         height: 0px;
         opacity: 0;
-        transition: 2s;
+        transition: 1s;
     }
 
 

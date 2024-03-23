@@ -135,26 +135,28 @@ a {
     color: var(--caribbean-current);
     font-weight: bold;
 }
-#cookies #title{
+#cookies #title {
     display: flex;
     align-items: center;
     cursor: pointer;
-
 }
 
-#cookies img{
+#title h2:hover{
+    text-decoration: underline;
+}
+
+#cookies img {
     width: 120px;
     height: 120px;
 }
 
-.info-cookies{
-    display: none;
+.info-cookies {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease; /* Legg til overgang til max-height */
     background-color: #fab6596b;
     padding: 20px;
-    transition: 2s;
 }
-
-
 
 
 @media only screen and (max-width: 980px) {

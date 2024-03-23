@@ -52,23 +52,60 @@ function flipCard(card, matchTerm) {
                 card.classList.add('matched-' + matchedPairs)
                 activeCard.classList.add('matched-' + matchedPairs)
 
+                const lyd = new Audio('sounds/success_bell.mp3')
+                lyd.play()
+
+
 
                 // Hvis alle par er matchet, viser en melding
                 if (matchedPairs === terms.length) {
                     setTimeout(() => {
-                        alert('Gratulerer, du har matchet alle begrepene!')
-                    }, 500)
-                    applauseSound.play(); // Spiller av lyd (applaus)
+                        let victory = document.getElementById('victory')
+                        victory.style.display = 'flex'
+                        memoryBoard.classList.add('blur')
+                        const lyd = new Audio('sounds/game-complete.mp3')
+
+                        let crossBtn = document.getElementById('cross')
+                        crossBtn.onclick = function(){
+                            victory.style.display = 'none'
+                            memoryBoard.classList.remove('blur')
+                        }
+                        lyd.play()
+                    }, 1000)
+
+
+                    // setTimeout(() => {
+                    //     alert('Gratulerer, du har matchet alle begrepene!')
+                    // }, 500)
                 }
             } else {
-                // Hvis kortene ikke matcher, snur dem tilbake etter en liten forsinkelse
                 setTimeout(() => {
+                    const lyd = new Audio('sounds/wrong-answer.mp3')
+                    lyd.play()
+
                     card.classList.remove('active')
                     firstCard.classList.remove('active')
-                }, 1000)
+
+                    // Legg til ristingseffekten
+                    card.classList.add('shake')
+                    firstCard.classList.add('shake')
+                    card.classList.add('wrong')
+                    firstCard.classList.add('wrong')
+
+                    // Fjern ristingseffekten etter en kort forsinkelse
+                    setTimeout(() => {
+                        card.classList.remove('shake')
+                        firstCard.classList.remove('shake')
+                        card.classList.remove('wrong')
+                        firstCard.classList.remove('wrong')
+                    }, 500)
+                }, 500)
+
             }
+
             activeCard = null
             activeTerm = null
+
         }
     }
 }

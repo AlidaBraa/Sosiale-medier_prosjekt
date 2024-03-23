@@ -1,18 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Spill</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
+
 <body>
+    <header>
+        <nav id="nav" class="container">
+            <div class="flexbox">
+                <a href="index.html">
+                    <p>Sosiale medier</p>
+                </a>
+            </div>
+            <div id="nav_bred" class="flexbox">
+
+                <li><a href="pros.html">Positivt</a></li>
+                <li><a href="cons.html">Negativt</a></li>
+                <li><a href="GDPR.html">Personvern</a></li>
+                <li><a href="universell_utforming.html">Universell utforming</a></li>
+
+            </div>
+            <div id="div_meny">
+                <div onclick="menu()" id="drop_down">
+                    <li><i class="fa-solid fa-bars"></i></li>
+                </div>
+                <div id="linker" class="show">
+                    <li><a href="pros.html">Positivt</a></li>
+                    <li><a href="cons.html">Negativt</a></li>
+                    <li><a href="GDPR.html">Personvern</a></li>
+                    <li><a href="universell_utforming.html">Universell utforming</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <h1>Match begrepet med riktig forklaring</h1>
+
+    <div id="victory">
+        <i id="cross" class="outIcon fa-solid fa-xmark"></i>
+        <p>Wow du kan virkelig begrepene dine! Hva vil du gjøre nå?</p>
+        <a href="match-spill.html"><button id="newRound">Start en ny runde</button></a>
+        <a href="index.html"> <button id="return">Gå tilbake til hovedsiden</button></a>
+    </div>
+
     <div class="memory-board" id="memoryBoard">
         <!-- Memory cards will be dynamically generated here -->
     </div>
-    
-    <audio id="applause-sound" src="applaus.mp3"></audio>
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/6f1CUodmppkxN5AOrZSdCs?utm_source=generator" frameBorder="0"
+        allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+    </iframe>
+    <div class="coment">
+        <p>Har du lyst til å høre på litt musikk mens du spiller? Vi tenkte at det ikke finnes en bedre sang for anledningen
+            enn den MGP jr. vinnende sangen Online. Vi håper du er enig! </p>
+    </div>
+    <footer>
+        <div class="container">
+            <div>
+                <h2>Vårt formål:</h2>
+                <p>På vår nettside er hovedformålet at besøkende skal ta en pause, så vi kan informere dem om sosiale
+                    medier og deres innvirkning. Vi ønsker å fange oppmerksomheten deres og veilede dem gjennom vårt
+                    innhold, slik at de kan få en bedre forståelse av hvordan sosiale medier fungerer, deres fordeler og
+                    ulemper.</p>
+            </div>
+            <div id="footer-logo"> <i class="footer-icon fa-solid fa-pause"></i></div>
+            <div>
+                <h2>Hvem er egentlig "vi"?</h2>
+                <p> Vi er</p>
+                <ul>
+                    <li>Alida Myklatun</li>
+                    <li>Atike Ipek</li>
+                    <li>Betaniya Dejene</li>
+                    <li>Eline Holthe</li>
+                    <li>Sarah Tydal Venold</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- <audio id="applause-sound" src="applaus.mp3"></audio> -->
     <script src="script.js"></script>
 </body>
+
 </html>

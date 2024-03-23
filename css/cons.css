@@ -18,31 +18,6 @@ h2{
 img{
     margin: auto;
 }
-/*
-#drop_down{
-    display: none;
-    color: white;
-    margin: auto;
-}
-
-#linker{
-    color: white;
-    background-color: #58a4a5;
-    transition: 2s;
-    height: max-content;
-    display: none;
-}
-
-.show{
-    display: none;
-}
-
-#div_meny{
-    display: flex;
-    flex-direction: row-reverse;
-    position: sticky;
-}
-*/
 
 
 /*Styler section 1 i cons*/
@@ -52,7 +27,6 @@ img{
 
 #section1{
     padding: 20px;
-    margin-top: 0;
 }
 
 #section1 div{
@@ -144,26 +118,7 @@ img{
         display: flex;
         flex-direction: column;
     }
-/*
-    #drop_down{
-        display: block;
-    }
 
-    #nav_bred{
-        display: none;
-    }
-
-    #linker{
-        display: block;
-    }
-
-    .show{
-        display: block;
-        height: 0px;
-        opacity: 0;
-        transition: 2s;
-    }
-*/
 
 }
 
