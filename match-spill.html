@@ -7,6 +7,10 @@
     <title>Memory Spill</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
@@ -38,8 +42,11 @@
             </div>
         </nav>
     </header>
+
     <h1>Match begrepet med riktig forklaring</h1>
+
     <div id="victory">
+        <i id="cross" class="outIcon fa-solid fa-xmark"></i>
         <p>Wow du kan virkelig begrepene dine! Hva vil du gjøre nå?</p>
         <a href="match-spill.html"><button id="newRound">Start en ny runde</button></a>
         <a href="index.html"> <button id="return">Gå tilbake til hovedsiden</button></a>
@@ -48,8 +55,17 @@
     <div class="memory-board" id="memoryBoard">
         <!-- Memory cards will be dynamically generated here -->
     </div>
-    
-    <audio id="applause-sound" src="applaus.mp3"></audio>
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/6f1CUodmppkxN5AOrZSdCs?utm_source=generator" frameBorder="0"
+        allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+    </iframe>
+    <div class="coment">
+        <p>Har du lyst til å høre på litt musikk mens du spiller? Vi tenkte at det ikke finnes en bedre sang for anledningen
+            enn den MGP jr. vinnende sangen Online. Vi håper du er enig! </p>
+    </div>
+
+    <!-- <audio id="applause-sound" src="applaus.mp3"></audio> -->
     <script src="script.js"></script>
 </body>
 

@@ -141,6 +141,10 @@ a {
     cursor: pointer;
 }
 
+#title h2:hover{
+    text-decoration: underline;
+}
+
 #cookies img {
     width: 120px;
     height: 120px;

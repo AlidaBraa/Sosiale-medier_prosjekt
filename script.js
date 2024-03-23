@@ -54,7 +54,7 @@ function flipCard(card, matchTerm) {
 
                 const lyd = new Audio('sounds/success_bell.mp3')
                 lyd.play()
-                
+
 
 
                 // Hvis alle par er matchet, viser en melding
@@ -64,7 +64,13 @@ function flipCard(card, matchTerm) {
                         victory.style.display = 'flex'
                         memoryBoard.classList.add('blur')
                         const lyd = new Audio('sounds/game-complete.mp3')
-                lyd.play()
+
+                        let crossBtn = document.getElementById('cross')
+                        crossBtn.onclick = function(){
+                            victory.style.display = 'none'
+                            memoryBoard.classList.remove('blur')
+                        }
+                        lyd.play()
                     }, 1000)
 
 

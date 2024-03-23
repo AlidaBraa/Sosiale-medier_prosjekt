@@ -167,14 +167,19 @@ nav li a:hover {
 footer{
     background-color: var(--blue);
     color: white;
+    padding: 20px;
+}
+
+footer p{
+    font-size: 18px;
 }
 
 footer .container{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    align-items: center;
-   
 }
+
 #footer-logo{
     display: flex;
     justify-content: center;
