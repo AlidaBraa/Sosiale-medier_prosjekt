@@ -14,7 +14,7 @@ function showList(){
 
 }
 
-function toggleImage() {
+function toggleImage(){
     var bilde = document.getElementById('nettvett-img');
     bilde.classList.toggle('visible');
 }

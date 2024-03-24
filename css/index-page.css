@@ -58,6 +58,10 @@ h1 {
     width: calc(50% - 20px); /* 50% av bredden med marginer trukket fra */
 }
 
+.fun li{
+    font-size: 19.5px;
+}
+
 /* flip the coin*/
 
 #overskrift_p_c {
@@ -261,6 +265,12 @@ h3 {
     .card {
         width: 80%;
     }
+
+    .fun li{
+        font-size: 15px;
+    }
+    
+    
 }
 
 @media only screen and (max-width: 400px) {
