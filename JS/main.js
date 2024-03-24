@@ -14,8 +14,6 @@ function showList(){
 
 }
 
-<<<<<<< HEAD
-=======
 function toggleImage() {
     var bilde = document.getElementById('nettvett-img');
     bilde.classList.toggle('visible');
@@ -25,4 +23,3 @@ function menu() {
     const linker = document.getElementById("linker")
     linker.classList.toggle("show")
 }
->>>>>>> 4e1735dcfc968bdbf48719c09f06e3b4e0606e92
