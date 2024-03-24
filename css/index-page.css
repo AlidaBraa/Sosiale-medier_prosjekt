@@ -53,7 +53,7 @@ h1 {
 }
 
 .fun {
-    background-color: var(--jungle-green);
+    background-color: var(--cambridge-blue);
     border-radius: 10px;
     width: calc(50% - 20px); /* 50% av bredden med marginer trukket fra */
 }
