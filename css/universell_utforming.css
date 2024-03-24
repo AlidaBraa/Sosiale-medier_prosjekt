@@ -72,6 +72,10 @@ section:nth-of-type(3) {
     color: black;
 }
 
+section:nth-of-type(3) img{
+    width: 450px;
+}
+
 section:nth-of-type(4) img {
     width: 80px;
     border: 5px solid var(--eminence);

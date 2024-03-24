@@ -163,12 +163,12 @@ h3 {
 }
 
 .card-hover-front {
-    transform: rotateY(15deg); /* flipper kortet horisontalt når den er klikket på (JS) */
+    transform: rotateY(15deg); /* litt animasjon på hover slik at man skjønner kortet kan flippes */
     transition: 0.5s;
 }
 
 .card-hover-back {
-    transform: rotateY(165deg) !important; /* flipper kortet horisontalt når den er klikket på (JS) */
+    transform: rotateY(165deg) !important; /* litt animasjon på hover slik at man skjønner kortet kan flippes */
     transition: 0.5s;
 }
 
