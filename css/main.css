@@ -163,7 +163,8 @@ nav li a:hover {
 .sourceInnhold {
     display: none;
     flex-direction: column;
-    transition: all 0.5s ease; /* Legg til en overgangseffekt på endring av display-egenskapen */
+    transition: all 0.5s ease;
+    /* Legg til en overgangseffekt på endring av display-egenskapen */
 }
 
 /* Legg til en klasse for å rotere ikonet */
@@ -172,28 +173,29 @@ nav li a:hover {
 }
 
 
-footer{
+footer {
     background-color: var(--blue);
     color: white;
     padding: 20px;
 }
 
-footer p{
+footer p {
     font-size: 18px;
 }
 
-footer .container{
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   align-items: center;
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
 
-#footer-logo{
+#footer-logo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer-icon{
+
+.footer-icon {
     font-size: 250px;
     opacity: 0.8;
 }
@@ -228,6 +230,19 @@ footer .container{
 }
 
 @media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+   
+    .container{
+    max-width: 650px;
+   }
+   
     #drop_down {
         display: block;
     }
@@ -247,5 +262,15 @@ footer .container{
         transition: 1s;
     }
 
-
+    
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    #footer-logo {
+        display: none;
+        
+    }
 }

@@ -177,4 +177,8 @@ a {
     #flex-intro{
         flex-wrap: wrap;
     }
+
+    .links{
+        height: fit-content;
+    }
 }
