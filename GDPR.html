@@ -202,7 +202,8 @@
     <section id="mySources">
         <div class="container">
             <div id="list" onclick="showList()">
-                <p id="sourceTitle">Kilder brukt på denne siden: <i class=" rotate180 fa-solid fa-arrow-down" id="arrowIcon"></i></p>
+                <p id="sourceTitle">Kilder brukt på denne siden: <i class="fa-solid fa-arrow-down"
+                        id="arrowIcon"></i></p>
             </div>
             <!-- <button id="list" onclick="showList()">Kilder</button> -->
             <div class="sourceInnhold">
@@ -243,12 +244,16 @@
     <script>
         function showInfo() {
             let infoDiv = document.querySelector('.info-cookies');
-            let header = document.getElementById('cookieHeader');
-
-            if (infoDiv.style.maxHeight === '0px') {
+           
+            
+            // Sjekk om max-height allerede er satt til '0px' eller ikke
+            if (infoDiv.style.maxHeight === '0px' || infoDiv.style.maxHeight === '') {
                 infoDiv.style.maxHeight = infoDiv.scrollHeight + 'px'; // Viser div ved å endre max-height til full høyde
+               infoDiv.style.padding = '10px'
+
             } else {
                 infoDiv.style.maxHeight = '0'; // Skjuler div ved å sette max-height til null
+                infoDiv.style.padding = '0'
             }
         }
 

@@ -153,9 +153,9 @@ a {
 .info-cookies {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease; /* Legg til overgang til max-height */
+    transition: max-height 0.5s ease; /* Legg til overgang til max-height */
     background-color: #fab6596b;
-    padding: 20px;
+
 }
 
 
