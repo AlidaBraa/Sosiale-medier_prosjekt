@@ -53,7 +53,7 @@ section:nth-of-type(2) h2 {
 }
 
 /* endrer padding i accordion */
-.panel .grid {
+#panel .grid {
     padding: 0;
 }
 
@@ -173,45 +173,44 @@ section:nth-of-type(7) {
 
 /* her kommer styling for accordion i section 6 */
 /* styler delen som brukes til å åpne og lukke accordion */
-.accordion {
+#accordion {
     background-color: #eee;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
     font-size: 20px;
+    display: flex;
+    align-items: center;
 }
 
 /* Legger til en bakgrunnsfarge på knappen hvis den klikkes på (legger til .active-klassen med JS), og når man flytter musen over den (hover) */
 .active,
-.accordion:hover {
-    background-color: #ccc;
+#accordion:hover {
+    background-color: #ccc !important;
 }
 
 /* Styler den delen av accordion som ekspanderer når man klikker på knappen. Denne delen er hidden by default */
-.panel {
+#panel {
     padding: 0 18px;
     background-color: #ccc;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.5s ease-out;
 }
 
 /* legger til tegn på knapp */
-.accordion:after {
-    content: '\02795'; /* Unicode for (+) tegn */
+#accordion::after {
+    content: "\02795"; /* Unicode for (+) tegn */
     font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 /* tegnet endrer seg etter at man klikker på det */
-.active:after {
-    content: "\2796"; /* Unicode for (-) tegn */
+.active::after {
+    content: "\2796" !important; /* Unicode for (-) tegn */
 }
 
 @media only screen and (max-width: 800px) {
