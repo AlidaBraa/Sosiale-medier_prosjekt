@@ -27,7 +27,7 @@
             </div>
             <div id="nav_bred" class="flexbox">
                 <li><a href="pros.html">Positivt</a></li>
-                <li><a href="cons.html">Negativt</a></li>
+                <li><a href="cons.html">Ekkokammer</a></li>
                 <li><a href="GDPR.html">Personvern</a></li>
                 <li><a href="universell_utforming.html">Universell utforming</a></li>
             </div>
@@ -37,7 +37,7 @@
                 </div>
                 <div id="linker" class="show">
                     <li><a href="pros.html">Positivt</a></li>
-                    <li><a href="cons.html">Negativt</a></li>
+                    <li><a href="cons.html">Ekkokammer</a></li>
                     <li><a href="GDPR.html">Personvern</a></li>
                     <li><a href="universell_utforming.html">Universell utforming</a></li>
                 </div>
@@ -243,76 +243,61 @@
         </section>
     </main>
 
-    <section id="mySources">
-        <div class="container">
-            <div id="list" onclick="showList()">
-                <p id="sourceTitle">Kilder brukt på denne siden: <i class=" fa-solid fa-arrow-down" id="arrowIcon"></i>
-                </p>
+        <section id="mySources">
+            <div class="container">
+                <div id="list" onclick="showList()">
+                    <p id="sourceTitle">Kilder brukt på denne siden: <i class=" fa-solid fa-arrow-down" id="arrowIcon"></i>
+                    </p>
+                </div>
+                <div class="sourceInnhold">
+                    <ul>
+                        <li>
+                            <a href="https://ndla.no/nb/subject:5e53694a-c8eb-4871-8558-71523941c28e/topic:0d260948-d2c6-4b8d-9c01-97aac6610961/resource:5f194d9c-49e3-415a-8b6a-a4127003d294"
+                                target="_blank">
+                                NDLA, WCAG – retningslinjer for tilgjengelig nettinnhold
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.uutilsynet.no/wcag-standarden/wcag-sortert-etter-prinsipp/713"
+                                target="_blank">
+                                uutilsynet.no, WCAG sortert etter prinsipp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.uutilsynet.no/wcag-standarden/wcag-standarden/86?f%5B0%5D=t2%3A130"
+                                target="_blank">
+                                uutilsynet.no, WCAG-standarden
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="sourceInnhold">
-                <ul>
-                    <li>
-                        <a href="https://ndla.no/nb/subject:5e53694a-c8eb-4871-8558-71523941c28e/topic:0d260948-d2c6-4b8d-9c01-97aac6610961/resource:5f194d9c-49e3-415a-8b6a-a4127003d294"
-                            target="_blank">
-                            NDLA, WCAG – retningslinjer for tilgjengelig nettinnhold
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.uutilsynet.no/wcag-standarden/wcag-sortert-etter-prinsipp/713"
-                            target="_blank">
-                            uutilsynet.no, WCAG sortert etter prinsipp
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.uutilsynet.no/wcag-standarden/wcag-standarden/86?f%5B0%5D=t2%3A130"
-                            target="_blank">
-                            uutilsynet.no, WCAG-standarden
-                        </a>
-                    </li>
-                </ul>
+        </section>
+        <footer>
+            <div class="container">
+                <div>
+                    <h2>Vårt formål:</h2>
+                    <p>På vår nettside er hovedformålet at besøkende skal ta en pause, så vi kan informere dem om sosiale
+                        medier og deres innvirkning. Vi ønsker å fange oppmerksomheten deres og veilede dem gjennom vårt
+                        innhold, slik at de kan få en bedre forståelse av hvordan sosiale medier fungerer, deres fordeler og
+                        ulemper.</p>
+                </div>
+                <div id="footer-logo"> <i class="footer-icon fa-solid fa-pause"></i></div>
+                <div>
+                    <h2>Hvem er egentlig "vi"?</h2>
+                    <p> Vi er</p>
+                    <ul>
+                        <li>Alida Myklatun</li>
+                        <li>Atike Ipek</li>
+                        <li>Betaniya Dejene</li>
+                        <li>Eline Holthe</li>
+                        <li>Sarah Tydal Venold</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div>
-                <h2>Vårt formål:</h2>
-                <p>På vår nettside er hovedformålet at besøkende skal ta en pause, så vi kan informere dem om sosiale
-                    medier og deres innvirkning. Vi ønsker å fange oppmerksomheten deres og veilede dem gjennom vårt
-                    innhold, slik at de kan få en bedre forståelse av hvordan sosiale medier fungerer, deres fordeler og
-                    ulemper.</p>
-            </div>
-            <div id="footer-logo"> <i class="footer-icon fa-solid fa-pause"></i></div>
-            <div>
-                <h2>Hvem er egentlig "vi"?</h2>
-                <p> Vi er</p>
-                <ul>
-                    <li>Alida Myklatun</li>
-                    <li>Atike Ipek</li>
-                    <li>Betaniya Dejene</li>
-                    <li>Eline Holthe</li>
-                    <li>Sarah Tydal Venold</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script>
-        const accordion = document.getElementById("accordion");
-        const arrow = document.querySelector("#arrowIcon2")
-            accordion.addEventListener("click", function(){
-                accordion.classList.toggle("active");
-                const panel = document.getElementById("panel");
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                    arrow.classList.remove('rotate180')
-                    arrow.style.transition= '1s ease' 
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                    arrow.classList.add('rotate180')
-                }
-            });
-    </script>
-    <script src="main.js"></script>
+        </footer>
+    <script src="JS/universell_utforming.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
