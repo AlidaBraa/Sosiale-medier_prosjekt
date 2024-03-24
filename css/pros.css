@@ -193,6 +193,12 @@
     }
 }
 
+@media only screen and (max-width: 580px) {
+    #news-box {
+        width: 500px;
+    }
+}
+
 @media only screen and (max-width: 530px) {
     #news-box {
         width: 450px;
