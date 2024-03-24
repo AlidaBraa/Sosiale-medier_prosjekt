@@ -97,13 +97,21 @@ nav i {
     height: 90px;
 }
 
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* margin-left: 5px; */
+    /* flex-direction: row; */
+    gap: 13px;
+}
+
 nav li {
     list-style-type: none;
     margin-left: 5px;
-    flex-direction: row;
     margin: 10px 5px;
     font-size: 20px;
-    justify-content: flex-end;
+   
 }
 
 nav li a {
@@ -259,7 +267,9 @@ footer .container {
     .container{
     max-width: 650px;
    }
-   
+   nav ul{
+    display: block;
+   }
     #drop_down {
         display: block;
     }
