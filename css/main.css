@@ -267,7 +267,9 @@ footer .container {
     .container{
     max-width: 650px;
    }
-   
+   nav ul{
+    display: block;
+   }
     #drop_down {
         display: block;
     }
