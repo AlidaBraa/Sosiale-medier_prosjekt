@@ -140,6 +140,56 @@
     display: block;
 }
 
-@media only screen and (max-width: 840px) {}
+@media only screen and (max-width: 840px) {
 
-@media only screen and (max-width: 900px) {}
+    #kommunikasjon img,
+    img {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .text {
+        flex-direction: column;
+        /* Endret til column for å plassere boksene under hverandre */
+    }
+
+    #nettvett-img.visible {
+        height: 500px;
+        max-width: 70%;
+    }
+
+    #news-box {
+        width: 600px;
+    }
+
+    #news-img {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #SoMe-box {
+        width: 400px;
+    }
+
+    #nettvett-img.visible {
+        height: 450px;
+        max-width: 60%;
+    }
+}
+
+    @media only screen and (max-width: 530px) {
+        #news-box {
+            width: 450px;
+        }
+    
+        #news-img {
+            width: 450px;
+        }
+
+        #nettvett-img.visible {
+            height: 300px;
+            max-width: 50%;
+        }
+    }
