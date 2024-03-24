@@ -107,16 +107,15 @@
 }
 
 #nettvett-img {
-    display: none;
     max-width: 40%;
     border-radius: 10px;
     margin: 20px auto;
     opacity: 0;
     height: 0;
+    transition: 0.5s ease;
 }
 
 #nettvett-img.visible {
-    display: block;
     opacity: 1;
     max-width: 40%;
     height: 700px;
@@ -124,7 +123,13 @@
 
 .fa-solid.fa-circle-exclamation {
     font-size: 30px;
+    transition: transform 0.3s ease; /* Legg til overgangseffekt */
 }
+
+.fa-solid.fa-circle-exclamation:hover {
+    transform: scale(1.2); /* Øk størrelsen ved hover */
+}
+
 
 #news-box {
     /*flex: 1;*/
