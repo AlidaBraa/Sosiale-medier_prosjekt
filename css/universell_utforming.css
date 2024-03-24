@@ -36,7 +36,7 @@ h1 {
 }
 
 /* padding rundt hovedtittel*/
-section:first-of-type{
+section:first-of-type {
     padding: 20px;
 }
 
@@ -65,7 +65,6 @@ section:nth-of-type(2) .grid {
 /* tilpasser grid i section 3 */
 section:nth-of-type(3) .grid {
     grid-template-columns: 1fr 1.5fr;
-    /* gap: 30px; */
 }
 
 section:nth-of-type(3) {
@@ -121,7 +120,7 @@ h3 {
     font-size: 20px;
 }
 
-section:nth-of-type(4) a {
+section:nth-of-type(4) .container:nth-of-type(2) a {
     padding: 3px 15px;
     width: fit-content;
     text-align: center;
@@ -138,7 +137,7 @@ section:nth-of-type(4) a {
 }
 
 /* linken i section om de 4 prinsippene */
-section:nth-of-type(4) a:hover {
+section:nth-of-type(4) .container:nth-of-type(2) a:hover {
     background-color: var(--caribbean-current);
     border-color: var(--cambridge-blue);
     color: white;
@@ -159,12 +158,12 @@ section:nth-of-type(5) img {
     margin: auto;
 }
 
-section:nth-of-type(6) p{
-    margin: 20px 0;    
+section:nth-of-type(6) p {
+    margin: 20px 0;
 }
 
-section:nth-of-type(6) .grid p{
-    margin: 0;    
+section:nth-of-type(6) .grid p {
+    margin: 0;
 }
 
 section:nth-of-type(7) {
@@ -201,7 +200,7 @@ section:nth-of-type(7) {
     transition: max-height 0.5s ease-out;
 }
 
-#arrowIcon2{
+#arrowIcon2 {
     color: var(--eminence);
     margin-left: 10px;
 }
@@ -215,7 +214,7 @@ section:nth-of-type(7) {
         max-width: 700px;
     }
 
-    img{
+    img {
         width: 70%;
         margin: auto;
         display: block;
@@ -225,33 +224,33 @@ section:nth-of-type(7) {
         text-align: center;
     }
 
-    p{
+    p {
         margin: 20px 0;
     }
 
-    section:nth-of-type(4) p{
+    section:nth-of-type(4) p {
         margin: 0;
     }
 
-    .grid{
+    .grid {
         margin-top: 0;
     }
 
-    section:nth-of-type(3) .grid{
+    section:nth-of-type(3) .grid {
         display: flex;
         flex-direction: column-reverse;
         gap: 0;
     }
 
-    section:nth-of-type(6) .grid{
-        margin: 30px;    
+    section:nth-of-type(6) .grid {
+        margin: 30px;
     }
 
-    section:nth-of-type(6) .grid p{
-        margin-top: 20px;    
+    section:nth-of-type(6) .grid p {
+        margin-top: 20px;
     }
 }
 
-section#mySources{
+section#mySources {
     margin: 0 auto;
 }

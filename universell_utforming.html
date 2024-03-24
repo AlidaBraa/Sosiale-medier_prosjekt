@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="no">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +15,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
-
 <body>
     <header>
         <nav id="nav" class="container">
@@ -52,7 +50,7 @@
         </section>
         <section> <!--2-->
             <div class="container">
-                <div class="grid"> <!-- skal jeg fjerne dette og legge det til ved siden av container?-->
+                <div class="grid">
                     <div>
                         <h2>Hva er universell utforming?</h2>
                         <br>
@@ -67,7 +65,7 @@
                             standardene for universell utforming av nettsider er WCAG.
                         </p>
                     </div>
-                    <img src="images/universell/accessibility4.jpg" alt="bilde om tilgjengelighet/brukervennlighet">
+                    <img src="images/universell/accessibility.jpg" alt="bilde om tilgjengelighet/brukervennlighet">
                 </div>
             </div>
         </section>
@@ -173,8 +171,8 @@
                 <div>
                     <button id="accordion">
                         De fleste av oss bruker mus for å navigere. Men hva gjør man hvis ikke man
-                        kan bruke mus? 
-                        <i class="fa-solid fa-arrow-down" id="arrowIcon2" ></i>
+                        kan bruke mus?
+                        <i class="fa-solid fa-arrow-down" id="arrowIcon2"></i>
                     </button>
                     <div id="panel">
                         <div class="grid">
@@ -242,62 +240,51 @@
             </div>
         </section>
     </main>
-
-        <section id="mySources">
-            <div class="container">
-                <div id="list" onclick="showList()">
-                    <p id="sourceTitle">Kilder brukt på denne siden: <i class=" fa-solid fa-arrow-down" id="arrowIcon"></i>
-                    </p>
-                </div>
-                <div class="sourceInnhold">
-                    <ul>
-                        <li>
-                            <a href="https://ndla.no/nb/subject:5e53694a-c8eb-4871-8558-71523941c28e/topic:0d260948-d2c6-4b8d-9c01-97aac6610961/resource:5f194d9c-49e3-415a-8b6a-a4127003d294"
-                                target="_blank">
-                                NDLA, WCAG – retningslinjer for tilgjengelig nettinnhold
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.uutilsynet.no/wcag-standarden/wcag-sortert-etter-prinsipp/713"
-                                target="_blank">
-                                uutilsynet.no, WCAG sortert etter prinsipp
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.uutilsynet.no/wcag-standarden/wcag-standarden/86?f%5B0%5D=t2%3A130"
-                                target="_blank">
-                                uutilsynet.no, WCAG-standarden
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <section id="mySources">
+        <div class="container">
+            <div id="list" onclick="showList()">
+                <p id="sourceTitle">Kilder brukt på denne siden: <i class=" fa-solid fa-arrow-down" id="arrowIcon"></i>
+                </p>
             </div>
-        </section>
-        <footer>
-            <div class="container">
-                <div>
-                    <h2>Vårt formål:</h2>
-                    <p>På vår nettside er hovedformålet at besøkende skal ta en pause, så vi kan informere dem om sosiale
-                        medier og deres innvirkning. Vi ønsker å fange oppmerksomheten deres og veilede dem gjennom vårt
-                        innhold, slik at de kan få en bedre forståelse av hvordan sosiale medier fungerer, deres fordeler og
-                        ulemper.</p>
-                </div>
-                <div id="footer-logo"> <i class="footer-icon fa-solid fa-pause"></i></div>
-                <div>
-                    <h2>Hvem er egentlig "vi"?</h2>
-                    <p> Vi er</p>
-                    <ul>
-                        <li>Alida Myklatun</li>
-                        <li>Atike Ipek</li>
-                        <li>Betaniya Dejene</li>
-                        <li>Eline Holthe</li>
-                        <li>Sarah Tydal Venold</li>
-                    </ul>
-                </div>
+            <div class="sourceInnhold">
+                <a href="https://ndla.no/nb/subject:5e53694a-c8eb-4871-8558-71523941c28e/topic:0d260948-d2c6-4b8d-9c01-97aac6610961/resource:5f194d9c-49e3-415a-8b6a-a4127003d294"
+                    target="_blank">
+                    NDLA, WCAG – retningslinjer for tilgjengelig nettinnhold
+                </a>
+                <a href="https://www.uutilsynet.no/wcag-standarden/wcag-sortert-etter-prinsipp/713" target="_blank">
+                    uutilsynet.no, WCAG sortert etter prinsipp
+                </a>
+                <a href="https://www.uutilsynet.no/wcag-standarden/wcag-standarden/86?f%5B0%5D=t2%3A130"
+                    target="_blank">
+                    uutilsynet.no, WCAG-standarden
+                </a>
             </div>
-        </footer>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div>
+                <h2>Vårt formål:</h2>
+                <p>På vår nettside er hovedformålet at besøkende skal ta en pause, så vi kan informere dem om sosiale
+                    medier og deres innvirkning. Vi ønsker å fange oppmerksomheten deres og veilede dem gjennom vårt
+                    innhold, slik at de kan få en bedre forståelse av hvordan sosiale medier fungerer, deres fordeler og
+                    ulemper.</p>
+            </div>
+            <div id="footer-logo"> <i class="footer-icon fa-solid fa-pause"></i></div>
+            <div>
+                <h2>Hvem er egentlig "vi"?</h2>
+                <p> Vi er</p>
+                <ul>
+                    <li>Alida Myklatun</li>
+                    <li>Atike Ipek</li>
+                    <li>Betaniya Dejene</li>
+                    <li>Eline Holthe</li>
+                    <li>Sarah Tydal Venold</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="JS/universell_utforming.js"></script>
     <script src="JS/main.js"></script>
 </body>
-
 </html>
