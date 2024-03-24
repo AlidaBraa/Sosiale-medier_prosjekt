@@ -201,17 +201,9 @@ section:nth-of-type(7) {
     transition: max-height 0.5s ease-out;
 }
 
-/* legger til tegn på knapp */
-#accordion::after {
-    content: "\02795"; /* Unicode for (+) tegn */
-    font-size: 13px;
+#arrowIcon2{
+    color: var(--eminence);
     margin-left: 10px;
-}
-
-/* tegnet endrer seg etter at man klikker på det */
-.active::after {
-    content: "\2796" !important; /* Unicode for (-) tegn */
-
 }
 
 @media only screen and (max-width: 800px) {
