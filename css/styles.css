@@ -59,23 +59,26 @@ button:hover {
 }
 
 /* spotify embed */
+
+#music{
+    margin-top: 20px;
+    margin-bottom: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 iframe {
-    width: 325px;
-    height: 350px;
-    position: absolute;
-    top: 25%;
-    left: 1%;
-    /* transform: translate(-50%, -50%); */
+    width: 430px;
+    height: 270px;
 }
 
 .comment {
     padding: 10px;
     background-color:#3A445D;
     color: white;
-    width: 325px;
-    position: absolute;
-    top: 55%;
-    left: 1%;
+    width: 400px;
+    height: 230px;
     border-radius: 10px;
 }
 
@@ -86,6 +89,7 @@ iframe {
     max-width: 900px;
     margin: 0 auto;
     z-index: 50;
+    justify-content: space-evenly;
 }
 
 .blur {
