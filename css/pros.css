@@ -69,10 +69,10 @@
     font-size: 20px;
 }
 
-.centered {
+.centered-SoMe {
     text-align: center;
     font-size: 40px;
-    color: var(--blue);
+    color: white;
 }
 
 #most-used {
@@ -97,7 +97,7 @@
     display: flex;
     flex-direction: column;
     background-color: var(--cambridge-blue);
-    color: black;
+    color: var(--eminence);
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 30px;
