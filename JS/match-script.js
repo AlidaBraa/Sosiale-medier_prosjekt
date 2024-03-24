@@ -66,11 +66,6 @@ function flipCard(card, matchTerm) {
                         memoryBoard.classList.add('blur')
                         const lyd = new Audio('sounds/game-complete.mp3')
 
-                        let crossBtn = document.getElementById('cross')
-                        crossBtn.onclick = function(){
-                            victory.style.display = 'none'
-                            memoryBoard.classList.remove('blur')
-                        }
                         lyd.play()
                     }, 1000)
 

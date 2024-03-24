@@ -30,16 +30,6 @@ h1 {
     z-index: 100;
 }
 
-.outIcon {
-    color: black;
-    font-size: 30px;
-    position: fixed;
-    top: 15%;
-    left: 120%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-}
-
 #victory p,
 button {
     font-size: 25px;
@@ -60,7 +50,7 @@ button:hover {
 
 /* spotify embed */
 
-#music{
+#music {
     margin-top: 20px;
     margin-bottom: -20px;
     display: flex;
@@ -75,7 +65,7 @@ iframe {
 
 .comment {
     padding: 10px;
-    background-color:#3A445D;
+    background-color: #3A445D;
     color: white;
     width: 400px;
     height: 230px;
@@ -184,44 +174,62 @@ iframe {
         transform: translateX(0);
     }
 }
+
 @media only screen and (max-width: 980px) {
-    .memory-card{
+    .memory-card {
         font-size: 15px;
     }
+
+    .outIcon {
+        top: 13%;
+        left: 117%;
+    }
 }
+
 @media only screen and (max-width: 700px) {
-  
-    .memory-card{
+
+    .memory-card {
         font-size: 12px;
     }
-    .memory-board{
+
+    .memory-board {
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
 
-    #music{
+    #music {
         flex-wrap: wrap;
         margin-bottom: 20px;
     }
 
-    iframe{
+    iframe {
         width: 350px;
         height: 200px;
     }
 
-    .comment{
+    .comment {
         height: fit-content;
         width: 350px;
 
     }
+    .outIcon {
+        top: 9%;
+        left: 117%;
+    
+    }
 }
+
 @media only screen and (max-width: 500px) {
-    .container{
+    .container {
         max-width: 400px;
     }
-    .memory-card{
+
+    .memory-card {
         width: calc(50% - 20px);
         height: 90px;
     }
-
+    .outIcon {
+        top: 7%;
+        left: 110%;
+    }
 }
