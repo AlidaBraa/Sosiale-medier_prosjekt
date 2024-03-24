@@ -239,3 +239,9 @@ h3 {
  }
 }
 
+@media only screen and (max-width: 500px) {
+    .card{
+       width: 80%;
+    }
+   }
+   
