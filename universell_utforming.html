@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,6 @@
     <title>Universell utforming</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/universell_utforming.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -63,7 +62,7 @@
                             standardene for universell utforming av nettsider er WCAG.
                         </p>
                     </div>
-                    <img src="images/universell/accessibility4.jpg" alt="picture about accessibility">
+                    <img src="images/universell/accessibility4.jpg" alt="bilde om tilgjengelighet/brukervennlighet">
                 </div>
             </div>
         </section>
@@ -167,9 +166,9 @@
                     </p>
                 </div>
                 <div>
-                    <button class="accordion">De fleste av oss bruker mus for å navigere. Men hva gjør man hvis ikke man
+                    <button id="accordion">De fleste av oss bruker mus for å navigere. Men hva gjør man hvis ikke man
                         kan bruke mus? </button>
-                    <div class="panel">
+                    <div id="panel">
                         <div class="grid">
                             <img src="images/universell/betjene.jpg"
                                 alt="bilde av en person som ikke har hånd som må derfor bruke tastatur i stedet for mus">
@@ -218,7 +217,7 @@
                 <h2>4. Robust</h2>
                 <div class="grid">
                     <img src="images/universell/error.jpg"
-                        alt="Tilgjengelig og utilgjengelig sammenligning av elementkonsistens. Begge eksemplene viser knapper på forskjellige nettsider. Det tilgjengelige eksemplet viser den samme lyseblå «logg inn»-knappen på tre forskjellige bakgrunner. Det utilgjengelige eksemplet viser en understreket lysegrønn «logg på konto»-knapp på en bakgrunn og en «logg på»-knapp på en annen i tillegg til den vanlige «logg inn»-knappen.">
+                        alt="Et bilde av en hånd som holder et error tegn som strekker seg ut av en laptop skjerm">
                     <div>
                         <p>
                             Det fjerde prinsippet handler om at innholdet må være robust. Det betyr at innholdet er
@@ -289,19 +288,16 @@
             </div>
         </footer>
     <script>
-        const accordions = document.getElementsByClassName("accordion");
-        for (const accordion of accordions) { //looper gjennom så jeg kan godt slette dette hvis det bare er en
-            accordion.addEventListener("click", expand);
-            function expand() {
-                this.classList.toggle("active");
-                const panel = this.nextElementSibling;
+        const accordion = document.getElementById("accordion");
+            accordion.addEventListener("click", function(){
+                accordion.classList.toggle("active");
+                const panel = document.getElementById("panel");
                 if (panel.style.maxHeight) {
                     panel.style.maxHeight = null;
                 } else {
                     panel.style.maxHeight = panel.scrollHeight + "px";
                 }
-            }
-        }
+            });
     </script>
     <script src="main.js"></script>
 </body>
