@@ -183,7 +183,6 @@
     </section>
     <section id="cookies">
         <div class="container">
-
             <div id="title" onclick="showInfo()">
                 <h2 id="cookieHeader">Hva er egentlig cookies? Les mer: </h2>
                 <img src="images/gdpr/cookies.png" alt="cookie icon">
@@ -202,8 +201,8 @@
     <section id="mySources">
         <div class="container">
             <div id="list" onclick="showList()">
-                <p id="sourceTitle">Kilder brukt på denne siden: <i class="fa-solid fa-arrow-down"
-                        id="arrowIcon"></i></p>
+                <p id="sourceTitle">Kilder brukt på denne siden: <i class="fa-solid fa-arrow-down" id="arrowIcon"></i>
+                </p>
             </div>
             <!-- <button id="list" onclick="showList()">Kilder</button> -->
             <div class="sourceInnhold">
@@ -242,18 +241,16 @@
     </footer>
 
     <script>
-        function showInfo() {
+       function showInfo() {
             let infoDiv = document.querySelector('.info-cookies');
-           
-            
+
             // Sjekk om max-height allerede er satt til '0px' eller ikke
             if (infoDiv.style.maxHeight === '0px' || infoDiv.style.maxHeight === '') {
-                infoDiv.style.maxHeight = infoDiv.scrollHeight + 'px'; // Viser div ved å endre max-height til full høyde
-               infoDiv.style.padding = '10px'
-
+                infoDiv.style.maxHeight = infoDiv.scrollHeight + 100 + 'px' // Legg til en ekstra høyde for padding
+                infoDiv.style.padding = '10px' // Legg til padding når elementet er åpent
             } else {
-                infoDiv.style.maxHeight = '0'; // Skjuler div ved å sette max-height til null
-                infoDiv.style.padding = '0'
+                infoDiv.style.maxHeight = '0' // Skjuler div ved å sette max-height til null
+                infoDiv.style.padding = '0' // Fjern padding når elementet er lukket
             }
         }
 
