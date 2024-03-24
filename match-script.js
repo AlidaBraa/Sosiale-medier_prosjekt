@@ -30,6 +30,7 @@ function createCard(content, pair) {
     return card
 }
 
+
 // Funksjon for å sjekke om kortene matcher
 function flipCard(card, matchTerm) {
     // Sjekker om kortet allerede er snudd eller matchet

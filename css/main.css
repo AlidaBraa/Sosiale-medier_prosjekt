@@ -141,14 +141,15 @@ nav li a:hover {
 }
 
 /* kilder på bunnen av siden før footer */
-#mySources button {
+/* #mySources button {
     color: white;
     background-color: #533172;
     font-size: 25px;
     border-radius: 10px;
     padding: 0 5px;
     width: 100px;
-}
+} */
+
 
 #mySources a {
     padding: 5px;
@@ -162,7 +163,14 @@ nav li a:hover {
 .sourceInnhold {
     display: none;
     flex-direction: column;
+    transition: all 0.5s ease; /* Legg til en overgangseffekt på endring av display-egenskapen */
 }
+
+/* Legg til en klasse for å rotere ikonet */
+.rotate180 {
+    transform: rotate(180deg);
+}
+
 
 footer{
     background-color: var(--blue);
