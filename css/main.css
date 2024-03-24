@@ -162,18 +162,22 @@ nav li a:hover {
     border-bottom: 2px black solid;
 }
 
-.sourceInnhold {
-    display: none;
-    flex-direction: column;
-    transition: all 0.5s ease;
-    /* Legg til en overgangseffekt på endring av display-egenskapen */
-}
-
 /* Legg til en klasse for å rotere ikonet */
 .rotate180 {
     transform: rotate(180deg);
+    transition: 1s ease;
 }
 
+.sourceInnhold{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease; 
+
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+
+}
 
 footer {
     background-color: var(--blue);
