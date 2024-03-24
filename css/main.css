@@ -151,18 +151,30 @@ nav li a:hover {
 } */
 #sourceTitle{
     cursor: pointer;
+    font-weight: bold;
 }
+
 #sourceTitle i{
     font-size: 20px;
 }
 
 #mySources a {
-    padding: 5px;
     max-width: fit-content;
+    color: black;
+    font-size: 18px;
+}
+
+#mySources li{
+    padding: 5px;
 }
 
 #mySources a:hover {
-    border-bottom: 2px black solid;
+    border-bottom: 2px #0d8291 solid;
+    color: #0d8291
+}
+
+#mySources a:active {
+    color: #216869;
 }
 
 /* Legg til en klasse for å rotere ikonet */
