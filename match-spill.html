@@ -4,13 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Spill</title>
+    <title>Match begrepene | Sosiale medier </title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
 
 <body>
@@ -24,7 +29,7 @@
             <div id="nav_bred" class="flexbox">
 
                 <li><a href="pros.html">Positivt</a></li>
-                <li><a href="cons.html">Negativt</a></li>
+                <li><a href="cons.html">Ekkokammer</a></li>
                 <li><a href="GDPR.html">Personvern</a></li>
                 <li><a href="universell_utforming.html">Universell utforming</a></li>
 
@@ -35,34 +40,41 @@
                 </div>
                 <div id="linker" class="show">
                     <li><a href="pros.html">Positivt</a></li>
-                    <li><a href="cons.html">Negativt</a></li>
+                    <li><a href="cons.html">Ekkokammer</a></li>
                     <li><a href="GDPR.html">Personvern</a></li>
                     <li><a href="universell_utforming.html">Universell utforming</a></li>
                 </div>
             </div>
         </nav>
     </header>
+    <div class="container">
 
-    <h1>Match begrepet med riktig forklaring</h1>
+        <h1>Match begrepet med riktig forklaring</h1>
 
-    <div id="victory">
-        <i id="cross" class="outIcon fa-solid fa-xmark"></i>
-        <p>Wow du kan virkelig begrepene dine! Hva vil du gjøre nå?</p>
-        <a href="match-spill.html"><button id="newRound">Start en ny runde</button></a>
-        <a href="index.html"> <button id="return">Gå tilbake til hovedsiden</button></a>
-    </div>
+        <div id="victory">
+            <i id="cross" class="outIcon fa-solid fa-xmark"></i>
+            <p>Wow du kan virkelig begrepene dine! Hva vil du gjøre nå?</p>
+            <a href="match-spill.html"><button id="newRound">Start en ny runde</button></a>
+            <a href="index.html"> <button id="return">Gå tilbake til hovedsiden</button></a>
+        </div>
 
-    <div class="memory-board" id="memoryBoard">
-        <!-- Memory cards will be dynamically generated here -->
-    </div>
-    <iframe style="border-radius:12px"
-        src="https://open.spotify.com/embed/track/6f1CUodmppkxN5AOrZSdCs?utm_source=generator" frameBorder="0"
-        allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy">
-    </iframe>
-    <div class="comment">
-        <p>Har du lyst til å høre på litt musikk mens du spiller? Vi tenkte at det ikke finnes en bedre sang for anledningen
-            enn den MGP jr. vinnende sangen Online. Vi håper du er enig! </p>
+        <div class="memory-board" id="memoryBoard">
+            <!-- Memory cards will be dynamically generated here -->
+        </div>
+        <div id="music">
+            <div>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/6f1CUodmppkxN5AOrZSdCs?utm_source=generator"
+                    frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+            </div>
+            <div class="comment">
+                <p>Har du lyst til å høre på litt musikk mens du spiller? Vi tenkte at det ikke finnes en bedre sang for
+                    anledningen
+                    enn den MGP jr. vinnende sangen Online. Vi håper du er enig! </p>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="container">
@@ -88,7 +100,7 @@
         </div>
     </footer>
     <!-- <audio id="applause-sound" src="applaus.mp3"></audio> -->
-    <script src="match-script.js"></script>
+    <script src="JS/match-script.js"></script>
 </body>
 
 </html>
