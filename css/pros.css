@@ -15,7 +15,6 @@
 }
 
 #overskrift h1 {
-    /* font-size: 50px; */
     border-bottom: solid 3px var(--mountbatten-pink);
 }
 
@@ -112,7 +111,7 @@
     margin: 20px auto;
     opacity: 0;
     height: 0;
-    transition: 0.5s ease;
+    transition: opacity 0.5s ease, height 0.5s ease;
 }
 
 #nettvett-img.visible {
@@ -123,13 +122,14 @@
 
 .fa-solid.fa-circle-exclamation {
     font-size: 30px;
-    transition: transform 0.3s ease; /* Legg til overgangseffekt */
+    transition: transform 0.3s ease;
+    /* Overgangseffekt */
 }
 
 .fa-solid.fa-circle-exclamation:hover {
-    transform: scale(1.2); /* Øk størrelsen ved hover */
+    transform: scale(1.2);
+    /* Øker størrelsen til ikonet ved hover */
 }
-
 
 #news-box {
     /*flex: 1;*/
@@ -166,7 +166,7 @@
 @media only screen and (max-width: 740px) {
     .text {
         flex-direction: column;
-        /* Endret til column for å plassere boksene under hverandre */
+        /* For å plassere boksene under hverandre */
     }
 
     #nettvett-img.visible {
@@ -193,17 +193,17 @@
     }
 }
 
-    @media only screen and (max-width: 530px) {
-        #news-box {
-            width: 450px;
-        }
-    
-        #news-img {
-            width: 450px;
-        }
-
-        #nettvett-img.visible {
-            height: 300px;
-            max-width: 50%;
-        }
+@media only screen and (max-width: 530px) {
+    #news-box {
+        width: 450px;
     }
+
+    #news-img {
+        width: 450px;
+    }
+
+    #nettvett-img.visible {
+        height: 300px;
+        max-width: 50%;
+    }
+}
