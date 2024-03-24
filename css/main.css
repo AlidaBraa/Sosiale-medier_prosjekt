@@ -76,7 +76,7 @@ section:nth-of-type(1) {
 
 .flexbox {
     display: flex;
-    gap: 15px;
+    gap: 13px;
     align-items: center;
 }
 
@@ -125,7 +125,7 @@ nav li a:hover {
 #linker {
     color: white;
     background-color: #58a4a5;
-    transition: 1s;
+    transition: 0.5s;
     height: max-content;
     display: none;
 }
@@ -280,7 +280,7 @@ footer .container {
         display: block;
         height: 0px;
         opacity: 0;
-        transition: 1s;
+        transition: 0.5s;
     }
 
     
