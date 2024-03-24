@@ -155,15 +155,20 @@ h3 {
     perspective: 1000px; /* dette gjør det mye mer 3d når det flipper */
 }
 
-.card_face :hover {
-    transition: 1s;
-    box-shadow: #f0f0f0;
+.card-hover-front {
+    transform: rotateY(20deg); /* flipper kortet horisontalt når den er klikket på (JS) */
+    transition: 0.5s;
+}
+
+.card-hover-back {
+    transform: rotateY(160deg) !important; /* flipper kortet horisontalt når den er klikket på (JS) */
+    transition: 0.5s;
 }
 
 .card_inner {
     width: 100%;
     height: 100%;
-    transition: transform 1s; /* får animasjon, gir tid */
+    transition: transform 1s; /* dette er viktig får flip-animasjon*/
     transform-style: preserve-3d; /* gjør at kortet kan bevege seg 3D */
     cursor: pointer;
     position: relative;
