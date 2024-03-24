@@ -122,6 +122,12 @@ img{
 
 }
 
+@media only screen and (max-width: 405px){
+    .pop_up.hide{
+        height: 75px;
+    }
+}
+
 
 
 
