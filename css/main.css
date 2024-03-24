@@ -141,51 +141,71 @@ nav li a:hover {
 }
 
 /* kilder på bunnen av siden før footer */
-#mySources button {
+/* #mySources button {
     color: white;
     background-color: #533172;
     font-size: 25px;
     border-radius: 10px;
     padding: 0 5px;
     width: 100px;
+} */
+#sourceTitle{
+    cursor: pointer;
+}
+#sourceTitle i{
+    font-size: 20px;
 }
 
 #mySources a {
     padding: 5px;
     max-width: fit-content;
+    color: black;
 }
 
 #mySources a:hover {
     border-bottom: 2px black solid;
 }
 
-.sourceInnhold {
-    display: none;
-    flex-direction: column;
+/* Legg til en klasse for å rotere ikonet */
+.rotate180 {
+    transform: rotate(180deg);
+    transition: 1s ease;
 }
 
-footer{
+.sourceInnhold{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease; 
+
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+
+}
+
+footer {
     background-color: var(--blue);
     color: white;
     padding: 20px;
 }
 
-footer p{
+footer p {
     font-size: 18px;
 }
 
-footer .container{
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   align-items: center;
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
 
-#footer-logo{
+#footer-logo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer-icon{
+
+.footer-icon {
     font-size: 250px;
     opacity: 0.8;
 }
@@ -220,6 +240,19 @@ footer .container{
 }
 
 @media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+   
+    .container{
+    max-width: 650px;
+   }
+   
     #drop_down {
         display: block;
     }
@@ -239,5 +272,15 @@ footer .container{
         transition: 1s;
     }
 
-
+    
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    #footer-logo {
+        display: none;
+        
+    }
 }

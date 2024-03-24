@@ -126,39 +126,59 @@
     </section>
 
 
-    <section id="mySources">
-        <div class="container">
-            <div id="list" onclick="showList()">
-                <p id="sourceTitle">Kilder brukt på denne siden: <i class="fa-solid fa-arrow-down"></i></p>
-            </div>
-            <div class="sourceInnhold">
 
-            </div>
+<section id="mySources">
+    <div class="container">
+        <div id="list" onclick="showList()">
+            <p id="sourceTitle">Kilder brukt på denne siden: <i class="fa-solid fa-arrow-down" id="arrowIcon"></i>
+            </p>
         </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div>
-                <h2>Vårt formål:</h2>
-                <p>På vår nettside er hovedformålet at besøkende skal ta en pause, så vi kan informere dem om sosiale
-                    medier og deres innvirkning. Vi ønsker å fange oppmerksomheten deres og veilede dem gjennom vårt
-                    innhold, slik at de kan få en bedre forståelse av hvordan sosiale medier fungerer, deres fordeler og
-                    ulemper.</p>
-            </div>
-            <div id="footer-logo"> <i class="footer-icon fa-solid fa-pause"></i></div>
-            <div>
-                <h2>Hvem er egentlig "vi"?</h2>
-                <p> Vi er</p>
-                <ul>
-                    <li>Alida Myklatun</li>
-                    <li>Atike Ipek</li>
-                    <li>Betaniya Dejene</li>
-                    <li>Eline Holthe</li>
-                    <li>Sarah Tydal Venold</li>
-                </ul>
-            </div>
+        <!-- <button id="list" onclick="showList()">Kilder</button> -->
+        <div class="sourceInnhold">
+            <a href="https://snl.no/sosiale_medier "
+                target="_blank">SNL.no, Sosiale medier</a>
+            <a href="https://www.ssb.no/teknologi-og-innovasjon/informasjons-og-kommunikasjonsteknologi-ikt/statistikk/bruk-av-ikt-i-husholdningene/artikler/ni-av-ti-nordmenn-bruker-sosiale-medier"
+                target="_blank">SSB.no, Ni av ti nordmenn bruker sosiale medier</a>  
+            <a href="https://ndla.no/nb/subject:1:1f1865fc-e4cc-48a0-918f-3530485ec424/topic:1:ae0e6304-d30e-4d3f-8e94-306d1a884e10/topic:1:4cd558a3-4287-4639-bb3b-329fff0eea9d/resource:0906da1a-2d1c-4428-910f-10e1bcee4187"
+                target="_blank">NDLA.no, Sosiale medier og kommunikasjon på nett</a>
         </div>
-    </footer>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div>
+            <h2>Vårt formål:</h2>
+            <p>På vår nettside er hovedformålet at besøkende skal ta en pause, så vi kan informere dem om sosiale
+                medier og deres innvirkning. Vi ønsker å fange oppmerksomheten deres og veilede dem gjennom vårt
+                innhold, slik at de kan få en bedre forståelse av hvordan sosiale medier fungerer, deres fordeler og
+                ulemper.</p>
+        </div>
+        <div id="footer-logo"> <i class="footer-icon fa-solid fa-pause"></i></div>
+        <div>
+            <h2>Hvem er egentlig "vi"?</h2>
+            <p> Vi er</p>
+            <ul>
+                <li>Alida Myklatun</li>
+                <li>Atike Ipek</li>
+                <li>Betaniya Dejene</li>
+                <li>Eline Holthe</li>
+                <li>Sarah Tydal Venold</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function toggleImage() {
+    var bilde = document.getElementById('nettvett-img');
+    bilde.classList.toggle('visible');
+}
+
+function menu() {
+    const linker = document.getElementById("linker")
+    linker.classList.toggle("show")
+}
+</script>
 
     <script src="main.js"> </script>
 
