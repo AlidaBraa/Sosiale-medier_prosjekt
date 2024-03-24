@@ -69,7 +69,7 @@ section:nth-of-type(3) .grid {
 }
 
 section:nth-of-type(3) {
-    background-color: #49A078;
+    background-color: var(--jungle-green);
     color: black;
 }
 
@@ -116,7 +116,7 @@ h3 {
 
 /* for å style noen ord og tall */
 .colourful {
-    color: #0d8897;
+    color: #0d8291;
     font-weight: bold;
     font-size: 20px;
 }
@@ -211,6 +211,7 @@ section:nth-of-type(7) {
 /* tegnet endrer seg etter at man klikker på det */
 .active::after {
     content: "\2796" !important; /* Unicode for (-) tegn */
+
 }
 
 @media only screen and (max-width: 800px) {
